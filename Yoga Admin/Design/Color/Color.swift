@@ -7,69 +7,6 @@
 
 import SwiftUI
 
-//extension Color {
-//    static private let hue: Double = 229 / 360
-//
-//    static private let accentLight = Color(hue: hue, saturation: 0.64, brightness: 0.78)
-//    static private let accentDark = Color(hue: hue, saturation: 0.64, brightness: 0.9)
-//
-//    static private let darkestLight = Color(hue: hue, saturation: 0.55, brightness: 0.19)
-//    static private let darkestDark = Color(hue: hue, saturation: 0.05, brightness: 1)
-//
-//    static private let darkLight = Color(hue: hue, saturation: 0.27, brightness: 0.44)
-//    static private let darkDark = Color(hue: hue, saturation: 0.05, brightness: 0.75)
-//
-//    static private let mediumLight = Color(hue: hue, saturation: 0.18, brightness: 0.68)
-//    static private let mediumDark = Color(hue: hue, saturation: 0.18, brightness: 0.25)
-//
-//    static private let lightLight = Color(hue: hue, saturation: 0.1, brightness: 0.95)
-//    static private let lightDark = Color(hue: hue, saturation: 0.1, brightness: 0.1)
-//
-//    static private let lightestLight = Color(hue: hue, saturation: 0.02, brightness: 0.98)
-//    static private let lightestDark = Color(hue: hue, saturation: 0.01, brightness: 0.07)
-//
-//    static private let whiteLight = Color(hue: 0, saturation: 0, brightness: 1)
-//    static private let whiteDark = Color(hue: hue, saturation: 0.02, brightness: 0.13)
-//
-//    static private let sidebarLight = Color(hue: 0.3, saturation: 0.01, brightness: 0.89)
-//    static private let sidebarDark = Color(hue: 0.3, saturation: 0.01, brightness: 0.16)
-//
-//    static func accent(_ scheme: ColorScheme) -> Color {
-//        scheme == .light ? accentLight : accentDark
-//    }
-//
-//    static func darkest(_ scheme: ColorScheme) -> Color {
-//        scheme == .light ? darkestLight : darkestDark
-//    }
-//
-//    static func dark(_ scheme: ColorScheme) -> Color {
-//        scheme == .light ? darkLight : darkDark
-//    }
-//
-//    static func medium(_ scheme: ColorScheme) -> Color {
-//        scheme == .light ? mediumLight : mediumDark
-//    }
-//
-//    static func light(_ scheme: ColorScheme) -> Color {
-//        scheme == .light ? lightLight : lightDark
-//    }
-//
-//    static func lightest(_ scheme: ColorScheme) -> Color {
-//        scheme == .light ? lightestLight : lightestDark
-//    }
-//
-//    static func white(_ scheme: ColorScheme) -> Color {
-//        scheme == .light ? whiteLight : whiteDark
-//    }
-//
-//    static func sidebar(_ scheme: ColorScheme) -> Color {
-//        scheme == .light ? sidebarLight : sidebarDark
-//    }
-//}
-//
-
-//}
-
 enum ColorEnum: String, Codable, CaseIterable, Identifiable {
     case red = "Red"
     case orange = "Orange"
@@ -107,13 +44,9 @@ enum ColorEnum: String, Codable, CaseIterable, Identifiable {
             return .brown
         }
     }
-    
 }
 
 extension Color {
-
-
-
     static let redPaleLight = Color(hue: 6 / 360, saturation: 0.2, brightness: 0.94)
     static let orangePaleLight = Color(hue: 29 / 360, saturation: 0.2, brightness: 0.96)
     static let yellowPaleLight = Color(hue: 43 / 360, saturation: 0.2, brightness: 0.98)
@@ -195,6 +128,6 @@ extension Color {
     }
 }
 
-//#Preview("Test Color") {
-//    Color.accent
-//}
+#Preview("Test Color") {
+    Color.accent
+}

@@ -287,11 +287,11 @@
 		754F08342B9A2C2000CA1AB4 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				754F08332B9A2C2000CA1AB4 /* Calendar.swift */,
 				754F08212B9A2C2000CA1AB4 /* Color */,
 				754F08272B9A2C2000CA1AB4 /* Modifier */,
 				754F082A2B9A2C2000CA1AB4 /* Styles */,
 				754F08322B9A2C2000CA1AB4 /* Views */,
-				754F08332B9A2C2000CA1AB4 /* Calendar.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -299,8 +299,8 @@
 		754F084A2B9A2C2C00CA1AB4 /* Attendance */ = {
 			isa = PBXGroup;
 			children = (
-				754F08472B9A2C2C00CA1AB4 /* AttendanceTableView.swift */,
 				754F08482B9A2C2C00CA1AB4 /* AttendanceView.swift */,
+				754F08472B9A2C2C00CA1AB4 /* AttendanceTableView.swift */,
 				754F08492B9A2C2C00CA1AB4 /* LessonColumnView.swift */,
 			);
 			path = Attendance;
@@ -318,10 +318,10 @@
 		754F08512B9A2C2C00CA1AB4 /* Course */ = {
 			isa = PBXGroup;
 			children = (
-				754F084D2B9A2C2C00CA1AB4 /* teacher */,
-				754F084E2B9A2C2C00CA1AB4 /* CourseView.swift */,
 				754F084F2B9A2C2C00CA1AB4 /* CourseVM.swift */,
+				754F084E2B9A2C2C00CA1AB4 /* CourseView.swift */,
 				754F08502B9A2C2C00CA1AB4 /* KindPickerView.swift */,
+				754F084D2B9A2C2C00CA1AB4 /* teacher */,
 			);
 			path = Course;
 			sourceTree = "<group>";
@@ -337,9 +337,9 @@
 		754F08572B9A2C2C00CA1AB4 /* Group */ = {
 			isa = PBXGroup;
 			children = (
-				754F08542B9A2C2C00CA1AB4 /* CreateGroupFormView.swift */,
-				754F08552B9A2C2C00CA1AB4 /* GroupSelectionView.swift */,
 				754F08562B9A2C2C00CA1AB4 /* GroupView.swift */,
+				754F08552B9A2C2C00CA1AB4 /* GroupSelectionView.swift */,
+				754F08542B9A2C2C00CA1AB4 /* CreateGroupFormView.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -347,9 +347,9 @@
 		754F085B2B9A2C2C00CA1AB4 /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				754F085A2B9A2C2C00CA1AB4 /* PaymentView.swift */,
 				754F08582B9A2C2C00CA1AB4 /* PaymentHeaderView.swift */,
 				754F08592B9A2C2C00CA1AB4 /* PaymentRowView.swift */,
-				754F085A2B9A2C2C00CA1AB4 /* PaymentView.swift */,
 			);
 			path = Payment;
 			sourceTree = "<group>";
@@ -357,10 +357,10 @@
 		754F08602B9A2C2C00CA1AB4 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				754F085C2B9A2C2C00CA1AB4 /* CourseSelectionView.swift */,
-				754F085D2B9A2C2C00CA1AB4 /* PersonalInformationView.swift */,
-				754F085E2B9A2C2C00CA1AB4 /* RegistrationView.swift */,
 				754F085F2B9A2C2C00CA1AB4 /* RegistrationVM.swift */,
+				754F085E2B9A2C2C00CA1AB4 /* RegistrationView.swift */,
+				754F085D2B9A2C2C00CA1AB4 /* PersonalInformationView.swift */,
+				754F085C2B9A2C2C00CA1AB4 /* CourseSelectionView.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -368,32 +368,24 @@
 		754F08662B9A2C2C00CA1AB4 /* Students */ = {
 			isa = PBXGroup;
 			children = (
+				754F08652B9A2C2C00CA1AB4 /* StudentsView.swift */,
+				754F08642B9A2C2C00CA1AB4 /* StudentsSearchView.swift */,
 				754F08612B9A2C2C00CA1AB4 /* StudentCoursesView.swift */,
 				754F08622B9A2C2C00CA1AB4 /* StudentPaymentsView.swift */,
 				754F08632B9A2C2C00CA1AB4 /* StudentPersonalInformationView.swift */,
-				754F08642B9A2C2C00CA1AB4 /* StudentsSearchView.swift */,
-				754F08652B9A2C2C00CA1AB4 /* StudentsView.swift */,
 			);
 			path = Students;
-			sourceTree = "<group>";
-		};
-		754F086D2B9A2C2C00CA1AB4 /* lookup */ = {
-			isa = PBXGroup;
-			children = (
-				754F08672B9A2C2C00CA1AB4 /* CourseCardView.swift */,
-				754F08682B9A2C2C00CA1AB4 /* TableKindPickerView.swift */,
-				754F08692B9A2C2C00CA1AB4 /* TimetableBodyView.swift */,
-				754F086A2B9A2C2C00CA1AB4 /* TimetableCoursesView.swift */,
-				754F086B2B9A2C2C00CA1AB4 /* TimetableView.swift */,
-				754F086C2B9A2C2C00CA1AB4 /* TimetableVM.swift */,
-			);
-			path = lookup;
 			sourceTree = "<group>";
 		};
 		754F086E2B9A2C2C00CA1AB4 /* Timetable */ = {
 			isa = PBXGroup;
 			children = (
-				754F086D2B9A2C2C00CA1AB4 /* lookup */,
+				754F086C2B9A2C2C00CA1AB4 /* TimetableVM.swift */,
+				754F086B2B9A2C2C00CA1AB4 /* TimetableView.swift */,
+				754F08682B9A2C2C00CA1AB4 /* TableKindPickerView.swift */,
+				754F086A2B9A2C2C00CA1AB4 /* TimetableCoursesView.swift */,
+				754F08692B9A2C2C00CA1AB4 /* TimetableBodyView.swift */,
+				754F08672B9A2C2C00CA1AB4 /* CourseCardView.swift */,
 			);
 			path = Timetable;
 			sourceTree = "<group>";
@@ -401,14 +393,14 @@
 		754F086F2B9A2C2C00CA1AB4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				754F084A2B9A2C2C00CA1AB4 /* Attendance */,
-				754F08512B9A2C2C00CA1AB4 /* Course */,
-				754F08532B9A2C2C00CA1AB4 /* Finance */,
 				754F08572B9A2C2C00CA1AB4 /* Group */,
-				754F085B2B9A2C2C00CA1AB4 /* Payment */,
 				754F08602B9A2C2C00CA1AB4 /* Registration */,
+				754F08512B9A2C2C00CA1AB4 /* Course */,
+				754F085B2B9A2C2C00CA1AB4 /* Payment */,
 				754F08662B9A2C2C00CA1AB4 /* Students */,
 				754F086E2B9A2C2C00CA1AB4 /* Timetable */,
+				754F08532B9A2C2C00CA1AB4 /* Finance */,
+				754F084A2B9A2C2C00CA1AB4 /* Attendance */,
 			);
 			path = Views;
 			sourceTree = "<group>";
