@@ -18,21 +18,13 @@ struct StudentPaymentsView: View {
 
             VStack(alignment: .leading, spacing: 20) {
                 ForEach(registrations) { registration in
-                    if let course = registration.course {
-                        CheckBox(
-                            label: "\(course.price) €",
-                            addition: "for \(course.name) in \(course.group?.name ?? "unknown group")",
-                            isSelected: registration.paid) {
-                                registration.paid.toggle()
-                            }
-                    } else {
-                        Text("Error: Registration without course.")
-                    }
+                    StudentPaymentsRowView(registration: registration)
                 }
             }
         }
     }
 }
+
 
 #Preview {
     let student = PreviewHelper.data.student

@@ -25,7 +25,7 @@ struct PaymentRowView: View {
 
     var body: some View {
         HStack {
-            CheckBox(isSelected: isPaid, selectionCallback: clickedCheckbox)
+            CheckBox(isSelected: $isPaid)
                 .padding(.leading, 2)
                 .padding(.trailing, 8)
 
@@ -54,11 +54,12 @@ struct PaymentRowView: View {
                 save()
             }
         }
+        .onChange(of: isPaid) { _, newValue in
+            clickedCheckbox(isPaid: newValue)
+        }
     }
 
-    private func clickedCheckbox() {
-        isPaid.toggle()
-
+    private func clickedCheckbox(isPaid: Bool) {
         if let index = madeChanges.firstIndex(where: { $0 == registration }) {
             if madeChanges[index].paid == isPaid {
                 madeChanges.remove(at: index)

@@ -67,6 +67,12 @@
 		754F089A2B9A2C6800CA1AB4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08922B9A2C6800CA1AB4 /* Models.swift */; };
 		754F089C2B9A2C6800CA1AB4 /* PreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08942B9A2C6800CA1AB4 /* PreviewHelper.swift */; };
 		754F089F2B9A2D6800CA1AB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F089E2B9A2D6800CA1AB4 /* ContentView.swift */; };
+		75CBE5262B9A3292006A6E8A /* AttendanceCourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE5252B9A3292006A6E8A /* AttendanceCourseInfoView.swift */; };
+		75CBE5282B9A32BB006A6E8A /* AttendanceStudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE5272B9A32BB006A6E8A /* AttendanceStudentListView.swift */; };
+		75CBE52A2B9A37AE006A6E8A /* CourseSelectionsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE5292B9A37AE006A6E8A /* CourseSelectionsVM.swift */; };
+		75CBE52D2B9A38F8006A6E8A /* CourseSelectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE52C2B9A38F8006A6E8A /* CourseSelectionsView.swift */; };
+		75CBE5302B9A3A58006A6E8A /* CourseCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE52F2B9A3A58006A6E8A /* CourseCheckboxView.swift */; };
+		75CBE5322B9A7497006A6E8A /* StudentPaymentsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE5312B9A7497006A6E8A /* StudentPaymentsRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +157,12 @@
 		754F08922B9A2C6800CA1AB4 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		754F08942B9A2C6800CA1AB4 /* PreviewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewHelper.swift; sourceTree = "<group>"; };
 		754F089E2B9A2D6800CA1AB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		75CBE5252B9A3292006A6E8A /* AttendanceCourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceCourseInfoView.swift; sourceTree = "<group>"; };
+		75CBE5272B9A32BB006A6E8A /* AttendanceStudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceStudentListView.swift; sourceTree = "<group>"; };
+		75CBE5292B9A37AE006A6E8A /* CourseSelectionsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSelectionsVM.swift; sourceTree = "<group>"; };
+		75CBE52C2B9A38F8006A6E8A /* CourseSelectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSelectionsView.swift; sourceTree = "<group>"; };
+		75CBE52F2B9A3A58006A6E8A /* CourseCheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCheckboxView.swift; sourceTree = "<group>"; };
+		75CBE5312B9A7497006A6E8A /* StudentPaymentsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentPaymentsRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,8 +312,8 @@
 			isa = PBXGroup;
 			children = (
 				754F08482B9A2C2C00CA1AB4 /* AttendanceView.swift */,
-				754F08472B9A2C2C00CA1AB4 /* AttendanceTableView.swift */,
-				754F08492B9A2C2C00CA1AB4 /* LessonColumnView.swift */,
+				75CBE52E2B9A3A47006A6E8A /* selection */,
+				75CBE52B2B9A38A0006A6E8A /* table */,
 			);
 			path = Attendance;
 			sourceTree = "<group>";
@@ -372,6 +384,7 @@
 				754F08642B9A2C2C00CA1AB4 /* StudentsSearchView.swift */,
 				754F08612B9A2C2C00CA1AB4 /* StudentCoursesView.swift */,
 				754F08622B9A2C2C00CA1AB4 /* StudentPaymentsView.swift */,
+				75CBE5312B9A7497006A6E8A /* StudentPaymentsRowView.swift */,
 				754F08632B9A2C2C00CA1AB4 /* StudentPersonalInformationView.swift */,
 			);
 			path = Students;
@@ -414,6 +427,27 @@
 				754F088F2B9A2C6800CA1AB4 /* DebugView.swift */,
 			);
 			path = "Swift Data";
+			sourceTree = "<group>";
+		};
+		75CBE52B2B9A38A0006A6E8A /* table */ = {
+			isa = PBXGroup;
+			children = (
+				754F08472B9A2C2C00CA1AB4 /* AttendanceTableView.swift */,
+				75CBE5252B9A3292006A6E8A /* AttendanceCourseInfoView.swift */,
+				75CBE5272B9A32BB006A6E8A /* AttendanceStudentListView.swift */,
+				754F08492B9A2C2C00CA1AB4 /* LessonColumnView.swift */,
+			);
+			path = table;
+			sourceTree = "<group>";
+		};
+		75CBE52E2B9A3A47006A6E8A /* selection */ = {
+			isa = PBXGroup;
+			children = (
+				75CBE5292B9A37AE006A6E8A /* CourseSelectionsVM.swift */,
+				75CBE52C2B9A38F8006A6E8A /* CourseSelectionsView.swift */,
+				75CBE52F2B9A3A58006A6E8A /* CourseCheckboxView.swift */,
+			);
+			path = selection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,6 +588,7 @@
 				754F07F42B9A2BB000CA1AB4 /* Yoga_AdminApp.swift in Sources */,
 				754F087E2B9A2C2C00CA1AB4 /* PaymentView.swift in Sources */,
 				754F08712B9A2C2C00CA1AB4 /* AttendanceView.swift in Sources */,
+				75CBE52D2B9A38F8006A6E8A /* CourseSelectionsView.swift in Sources */,
 				754F089F2B9A2D6800CA1AB4 /* ContentView.swift in Sources */,
 				754F08722B9A2C2C00CA1AB4 /* LessonColumnView.swift in Sources */,
 				754F088C2B9A2C2C00CA1AB4 /* TimetableView.swift in Sources */,
@@ -561,6 +596,7 @@
 				754F08352B9A2C2100CA1AB4 /* Color.swift in Sources */,
 				754F08992B9A2C6800CA1AB4 /* ModelExtensions.swift in Sources */,
 				754F08422B9A2C2100CA1AB4 /* EmptyView.swift in Sources */,
+				75CBE5322B9A7497006A6E8A /* StudentPaymentsRowView.swift in Sources */,
 				754F08882B9A2C2C00CA1AB4 /* CourseCardView.swift in Sources */,
 				754F08452B9A2C2100CA1AB4 /* TextFieldV.swift in Sources */,
 				754F087F2B9A2C2C00CA1AB4 /* CourseSelectionView.swift in Sources */,
@@ -570,6 +606,8 @@
 				754F08812B9A2C2C00CA1AB4 /* RegistrationView.swift in Sources */,
 				754F08822B9A2C2C00CA1AB4 /* RegistrationVM.swift in Sources */,
 				754F08402B9A2C2100CA1AB4 /* DatePickerView.swift in Sources */,
+				75CBE5282B9A32BB006A6E8A /* AttendanceStudentListView.swift in Sources */,
+				75CBE52A2B9A37AE006A6E8A /* CourseSelectionsVM.swift in Sources */,
 				754F08372B9A2C2100CA1AB4 /* ColorSelectionView.swift in Sources */,
 				754F088A2B9A2C2C00CA1AB4 /* TimetableBodyView.swift in Sources */,
 				754F08782B9A2C2C00CA1AB4 /* FinanceView.swift in Sources */,
@@ -578,6 +616,7 @@
 				754F08432B9A2C2100CA1AB4 /* PricePickerView.swift in Sources */,
 				754F08392B9A2C2100CA1AB4 /* ifModifier.swift in Sources */,
 				754F08412B9A2C2100CA1AB4 /* DotOption.swift in Sources */,
+				75CBE5262B9A3292006A6E8A /* AttendanceCourseInfoView.swift in Sources */,
 				754F08702B9A2C2C00CA1AB4 /* AttendanceTableView.swift in Sources */,
 				754F088D2B9A2C2C00CA1AB4 /* TimetableVM.swift in Sources */,
 				754F087B2B9A2C2C00CA1AB4 /* GroupView.swift in Sources */,
@@ -592,6 +631,7 @@
 				754F08842B9A2C2C00CA1AB4 /* StudentPaymentsView.swift in Sources */,
 				754F089A2B9A2C6800CA1AB4 /* Models.swift in Sources */,
 				754F083E2B9A2C2100CA1AB4 /* TextFieldStyle.swift in Sources */,
+				75CBE5302B9A3A58006A6E8A /* CourseCheckboxView.swift in Sources */,
 				754F083D2B9A2C2100CA1AB4 /* ButtonStyle.swift in Sources */,
 				754F087A2B9A2C2C00CA1AB4 /* GroupSelectionView.swift in Sources */,
 				754F08792B9A2C2C00CA1AB4 /* CreateGroupFormView.swift in Sources */,

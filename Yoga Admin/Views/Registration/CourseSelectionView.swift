@@ -29,6 +29,7 @@ struct CourseSelectionView: View {
                 Label("Create a course to register a student", systemImage: "list.bullet.clipboard")
                     .foregroundStyle(Color.dark)
                     .padding(.bottom, 20)
+
             } else {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 26) {

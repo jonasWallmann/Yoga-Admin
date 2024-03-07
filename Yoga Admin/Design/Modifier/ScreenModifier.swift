@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct ScreenModifier: ViewModifier {
+    let leadingPadding: CGFloat
+    let topPadding: CGFloat
+
     func body(content: Content) -> some View {
         content
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-            .padding(.horizontal, 24)
-            .padding(.top, 36)
+            .padding(.leading, leadingPadding)
+            .padding(.top, topPadding)
             .background(Color.lightest)
     }
 }
 
 extension View {
-    public func screen() -> some View {
-        modifier(ScreenModifier())
+    public func screen(leadingPadding: CGFloat = 24, topPadding: CGFloat = 26) -> some View {
+        modifier(ScreenModifier(leadingPadding: leadingPadding, topPadding: topPadding))
     }
 }
 

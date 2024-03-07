@@ -73,6 +73,7 @@ struct ContentView: View {
                     NavigationLink {
                         AttendanceView()
                             .environment(appVM)
+                            .navigationTitle("Attendance")
                     } label: {
                         Label("Attendance", systemImage: "checkmark.circle")
                     }

@@ -11,6 +11,10 @@ import Foundation
 class AppVM {
     public var group: CourseGroup?
 
+    public var courses: [Course] {
+        group?.courses ?? []
+    }
+
     init(group: CourseGroup? = nil) {
         self.group = group
     }

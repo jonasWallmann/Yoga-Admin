@@ -56,7 +56,9 @@ struct StudentsView: View {
                                 .padding(.top, 22)
                         }
                     }
+                    .frame(maxWidth: 900)
                 }
+                .padding(.trailing)
                 .screen()
             }
         }

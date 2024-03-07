@@ -11,26 +11,25 @@ struct CheckBox: View {
     var label: String? = nil
     var addition: String? = nil
 
-    let isSelected: Bool
-
-    let selectionCallback: () -> Void
+    @Binding var isSelected: Bool
 
     var body: some View {
-        Button(action: selectionCallback) {
+        Button {
+            isSelected.toggle()
+        } label: {
             HStack {
                 checkmark
 
                 if let label = label {
                     Text(label)
-                        .foregroundStyle(addition == nil ? Color.dark : Color.darkest)
-                        .fontWeight(addition == nil ? .regular : .medium)
                 }
 
                 if let addition = addition {
+                    Spacer()
                     Text(addition)
-                        .foregroundStyle(Color.dark)
                 }
             }
+            .foregroundStyle(.dark)
         }
         .buttonStyle(.plain)
     }
@@ -41,7 +40,7 @@ struct CheckBox: View {
                 .foregroundStyle(isSelected ? .accent : .snow)
 
             RoundedRectangle(cornerRadius: 2)
-                .stroke(lineWidth: 1.6)
+                .strokeBorder(lineWidth: 1.6)
 
             if isSelected {
                 Image(systemName: "checkmark")
@@ -57,8 +56,6 @@ struct CheckBox: View {
 #Preview {
     @State var isSelected = false
 
-    return CheckBox(isSelected: isSelected) {
-        isSelected.toggle()
-    }
-    .padding()
+    return CheckBox(isSelected: $isSelected)
+        .padding()
 }

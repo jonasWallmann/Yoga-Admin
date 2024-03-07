@@ -24,21 +24,22 @@ struct LessonColumnView: View {
     }
 
     var body: some View {
-        VStack(spacing: AttendanceSpacing.headerBodySpacing) {
-            VStack(spacing: 16) {
+        VStack(spacing: 0) {
+            VStack(spacing: 8) {
                 Text(number.description)
-                    .font(.title2)
+                    .font(.title3)
+                    .fontWeight(.semibold)
                     .foregroundStyle(.darkest)
                 Text(date)
                     .foregroundStyle(.dark)
             }
-            .frame(height: AttendanceSpacing.headerHeight)
+            .frame(height: AttendanceSpacing.HEADER_ROW_HEIGHT)
 
             VStack(spacing: 0) {
-                Divider()
+//                Divider()
                 ForEach(registrations) { _ in
                     Divider()
-                        .frame(height: AttendanceSpacing.rowHeight, alignment: .bottom)
+                        .frame(height: AttendanceSpacing.NAME_ROW_HEIGHT, alignment: .top)
                 }
             }
         }

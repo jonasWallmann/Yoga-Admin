@@ -52,6 +52,10 @@ extension Course {
         (Calendar.current.dateComponents([.day], from: start, to: end).day ?? 0) / 7 + 1
     }
 
+    public var registrationCount: Int {
+        registrations?.count ?? 0
+    }
+
     public var startsInDays: Int {
         return Int(start.timeIntervalSince(.now) / 3600 / 24)
     }
