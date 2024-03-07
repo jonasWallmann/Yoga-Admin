@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		754F07F42B9A2BB000CA1AB4 /* Yoga_AdminApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F07F32B9A2BB000CA1AB4 /* Yoga_AdminApp.swift */; };
+		754F07F62B9A2BB000CA1AB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F07F52B9A2BB000CA1AB4 /* ContentView.swift */; };
+		754F07F82B9A2BB100CA1AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F07F72B9A2BB100CA1AB4 /* Assets.xcassets */; };
+		754F07FC2B9A2BB100CA1AB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F07FB2B9A2BB100CA1AB4 /* Preview Assets.xcassets */; };
+		754F08062B9A2BB100CA1AB4 /* Yoga_AdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08052B9A2BB100CA1AB4 /* Yoga_AdminTests.swift */; };
+		754F08102B9A2BB200CA1AB4 /* Yoga_AdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F080F2B9A2BB200CA1AB4 /* Yoga_AdminUITests.swift */; };
+		754F08122B9A2BB200CA1AB4 /* Yoga_AdminUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08112B9A2BB200CA1AB4 /* Yoga_AdminUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		754F08022B9A2BB100CA1AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754F07E82B9A2BB000CA1AB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754F07EF2B9A2BB000CA1AB4;
+			remoteInfo = "Yoga Admin";
+		};
+		754F080C2B9A2BB200CA1AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754F07E82B9A2BB000CA1AB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754F07EF2B9A2BB000CA1AB4;
+			remoteInfo = "Yoga Admin";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		754F07F02B9A2BB000CA1AB4 /* Yoga Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yoga Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F07F32B9A2BB000CA1AB4 /* Yoga_AdminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yoga_AdminApp.swift; sourceTree = "<group>"; };
+		754F07F52B9A2BB000CA1AB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		754F07F72B9A2BB100CA1AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		754F07F92B9A2BB100CA1AB4 /* Yoga_Admin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yoga_Admin.entitlements; sourceTree = "<group>"; };
+		754F07FB2B9A2BB100CA1AB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		754F08012B9A2BB100CA1AB4 /* Yoga AdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yoga AdminTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F08052B9A2BB100CA1AB4 /* Yoga_AdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yoga_AdminTests.swift; sourceTree = "<group>"; };
+		754F080B2B9A2BB200CA1AB4 /* Yoga AdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yoga AdminUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F080F2B9A2BB200CA1AB4 /* Yoga_AdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yoga_AdminUITests.swift; sourceTree = "<group>"; };
+		754F08112B9A2BB200CA1AB4 /* Yoga_AdminUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yoga_AdminUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		754F07ED2B9A2BB000CA1AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F07FE2B9A2BB100CA1AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F08082B9A2BB200CA1AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		754F07E72B9A2BB000CA1AB4 = {
+			isa = PBXGroup;
+			children = (
+				754F07F22B9A2BB000CA1AB4 /* Yoga Admin */,
+				754F08042B9A2BB100CA1AB4 /* Yoga AdminTests */,
+				754F080E2B9A2BB200CA1AB4 /* Yoga AdminUITests */,
+				754F07F12B9A2BB000CA1AB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		754F07F12B9A2BB000CA1AB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				754F07F02B9A2BB000CA1AB4 /* Yoga Admin.app */,
+				754F08012B9A2BB100CA1AB4 /* Yoga AdminTests.xctest */,
+				754F080B2B9A2BB200CA1AB4 /* Yoga AdminUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		754F07F22B9A2BB000CA1AB4 /* Yoga Admin */ = {
+			isa = PBXGroup;
+			children = (
+				754F07F32B9A2BB000CA1AB4 /* Yoga_AdminApp.swift */,
+				754F07F52B9A2BB000CA1AB4 /* ContentView.swift */,
+				754F07F72B9A2BB100CA1AB4 /* Assets.xcassets */,
+				754F07F92B9A2BB100CA1AB4 /* Yoga_Admin.entitlements */,
+				754F07FA2B9A2BB100CA1AB4 /* Preview Content */,
+			);
+			path = "Yoga Admin";
+			sourceTree = "<group>";
+		};
+		754F07FA2B9A2BB100CA1AB4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				754F07FB2B9A2BB100CA1AB4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		754F08042B9A2BB100CA1AB4 /* Yoga AdminTests */ = {
+			isa = PBXGroup;
+			children = (
+				754F08052B9A2BB100CA1AB4 /* Yoga_AdminTests.swift */,
+			);
+			path = "Yoga AdminTests";
+			sourceTree = "<group>";
+		};
+		754F080E2B9A2BB200CA1AB4 /* Yoga AdminUITests */ = {
+			isa = PBXGroup;
+			children = (
+				754F080F2B9A2BB200CA1AB4 /* Yoga_AdminUITests.swift */,
+				754F08112B9A2BB200CA1AB4 /* Yoga_AdminUITestsLaunchTests.swift */,
+			);
+			path = "Yoga AdminUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		754F07EF2B9A2BB000CA1AB4 /* Yoga Admin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F08152B9A2BB200CA1AB4 /* Build configuration list for PBXNativeTarget "Yoga Admin" */;
+			buildPhases = (
+				754F07EC2B9A2BB000CA1AB4 /* Sources */,
+				754F07ED2B9A2BB000CA1AB4 /* Frameworks */,
+				754F07EE2B9A2BB000CA1AB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yoga Admin";
+			productName = "Yoga Admin";
+			productReference = 754F07F02B9A2BB000CA1AB4 /* Yoga Admin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		754F08002B9A2BB100CA1AB4 /* Yoga AdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F08182B9A2BB200CA1AB4 /* Build configuration list for PBXNativeTarget "Yoga AdminTests" */;
+			buildPhases = (
+				754F07FD2B9A2BB100CA1AB4 /* Sources */,
+				754F07FE2B9A2BB100CA1AB4 /* Frameworks */,
+				754F07FF2B9A2BB100CA1AB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754F08032B9A2BB100CA1AB4 /* PBXTargetDependency */,
+			);
+			name = "Yoga AdminTests";
+			productName = "Yoga AdminTests";
+			productReference = 754F08012B9A2BB100CA1AB4 /* Yoga AdminTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		754F080A2B9A2BB200CA1AB4 /* Yoga AdminUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F081B2B9A2BB200CA1AB4 /* Build configuration list for PBXNativeTarget "Yoga AdminUITests" */;
+			buildPhases = (
+				754F08072B9A2BB200CA1AB4 /* Sources */,
+				754F08082B9A2BB200CA1AB4 /* Frameworks */,
+				754F08092B9A2BB200CA1AB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754F080D2B9A2BB200CA1AB4 /* PBXTargetDependency */,
+			);
+			name = "Yoga AdminUITests";
+			productName = "Yoga AdminUITests";
+			productReference = 754F080B2B9A2BB200CA1AB4 /* Yoga AdminUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		754F07E82B9A2BB000CA1AB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					754F07EF2B9A2BB000CA1AB4 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					754F08002B9A2BB100CA1AB4 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 754F07EF2B9A2BB000CA1AB4;
+					};
+					754F080A2B9A2BB200CA1AB4 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 754F07EF2B9A2BB000CA1AB4;
+					};
+				};
+			};
+			buildConfigurationList = 754F07EB2B9A2BB000CA1AB4 /* Build configuration list for PBXProject "Yoga Admin" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 754F07E72B9A2BB000CA1AB4;
+			productRefGroup = 754F07F12B9A2BB000CA1AB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				754F07EF2B9A2BB000CA1AB4 /* Yoga Admin */,
+				754F08002B9A2BB100CA1AB4 /* Yoga AdminTests */,
+				754F080A2B9A2BB200CA1AB4 /* Yoga AdminUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		754F07EE2B9A2BB000CA1AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F07FC2B9A2BB100CA1AB4 /* Preview Assets.xcassets in Resources */,
+				754F07F82B9A2BB100CA1AB4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F07FF2B9A2BB100CA1AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F08092B9A2BB200CA1AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		754F07EC2B9A2BB000CA1AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F07F62B9A2BB000CA1AB4 /* ContentView.swift in Sources */,
+				754F07F42B9A2BB000CA1AB4 /* Yoga_AdminApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F07FD2B9A2BB100CA1AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F08062B9A2BB100CA1AB4 /* Yoga_AdminTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F08072B9A2BB200CA1AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F08122B9A2BB200CA1AB4 /* Yoga_AdminUITestsLaunchTests.swift in Sources */,
+				754F08102B9A2BB200CA1AB4 /* Yoga_AdminUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		754F08032B9A2BB100CA1AB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754F07EF2B9A2BB000CA1AB4 /* Yoga Admin */;
+			targetProxy = 754F08022B9A2BB100CA1AB4 /* PBXContainerItemProxy */;
+		};
+		754F080D2B9A2BB200CA1AB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754F07EF2B9A2BB000CA1AB4 /* Yoga Admin */;
+			targetProxy = 754F080C2B9A2BB200CA1AB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		754F08132B9A2BB200CA1AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		754F08142B9A2BB200CA1AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		754F08162B9A2BB200CA1AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Yoga Admin/Yoga_Admin.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yoga Admin/Preview Content\"";
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.Yoga-Admin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		754F08172B9A2BB200CA1AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Yoga Admin/Yoga_Admin.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yoga Admin/Preview Content\"";
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.Yoga-Admin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		754F08192B9A2BB200CA1AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.Yoga-AdminTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yoga Admin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yoga Admin";
+			};
+			name = Debug;
+		};
+		754F081A2B9A2BB200CA1AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.Yoga-AdminTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yoga Admin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yoga Admin";
+			};
+			name = Release;
+		};
+		754F081C2B9A2BB200CA1AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.Yoga-AdminUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yoga Admin";
+			};
+			name = Debug;
+		};
+		754F081D2B9A2BB200CA1AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.Yoga-AdminUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yoga Admin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		754F07EB2B9A2BB000CA1AB4 /* Build configuration list for PBXProject "Yoga Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F08132B9A2BB200CA1AB4 /* Debug */,
+				754F08142B9A2BB200CA1AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F08152B9A2BB200CA1AB4 /* Build configuration list for PBXNativeTarget "Yoga Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F08162B9A2BB200CA1AB4 /* Debug */,
+				754F08172B9A2BB200CA1AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F08182B9A2BB200CA1AB4 /* Build configuration list for PBXNativeTarget "Yoga AdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F08192B9A2BB200CA1AB4 /* Debug */,
+				754F081A2B9A2BB200CA1AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F081B2B9A2BB200CA1AB4 /* Build configuration list for PBXNativeTarget "Yoga AdminUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F081C2B9A2BB200CA1AB4 /* Debug */,
+				754F081D2B9A2BB200CA1AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 754F07E82B9A2BB000CA1AB4 /* Project object */;
+}
