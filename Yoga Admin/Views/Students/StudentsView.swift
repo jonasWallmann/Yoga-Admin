@@ -21,43 +21,34 @@ struct StudentsView: View {
 
     var body: some View {
         if students.isEmpty {
-            VStack(alignment: .leading) {
-                Text("Students")
-                    .navTitle()
-                EmptyView(label: "You have not created any students yet", subLabel: "Go to 'Registration' to add students", systemImage: "person")
-            }
-            .screen()
+            EmptyView(label: "You have not created any students yet", subLabel: "Go to 'Registration' to add students", systemImage: "person")
+
         } else {
             HStack(alignment: .top, spacing: 0) {
                 StudentsSearchView(selection: $student)
                     .frame(minWidth: 180, maxWidth: 240)
 
-                VStack(alignment: .leading, spacing: 40) {
-                    Text(student?.name ?? "Students")
-                        .navTitle()
-
-                    HStack(alignment: .top, spacing: 32) {
-                        if let student = student {
-                            if let registrations = registrations {
-                                StudentCoursesView(registrations: registrations)
-                                    .padding(.horizontal, -16)
-                                StudentPaymentsView(registrations: registrations)
-                                    .card()
-                                    .padding(.top, 22)
-                            } else {
-                                Text("No registrations")
-                                    .foregroundStyle(Color.dark)
-                                    .card()
-                                    .padding(.top, 22)
-                            }
-
-                            StudentPersonalInformationView(student: student)
+                HStack(alignment: .top, spacing: 32) {
+                    if let student = student {
+                        if let registrations = registrations {
+                            StudentCoursesView(registrations: registrations)
+                                .padding(.horizontal, -16)
+                            StudentPaymentsView(registrations: registrations)
+                                .card()
+                                .padding(.top, 22)
+                        } else {
+                            Text("No registrations")
+                                .foregroundStyle(Color.dark)
                                 .card()
                                 .padding(.top, 22)
                         }
+
+                        StudentPersonalInformationView(student: student)
+                            .card()
+                            .padding(.top, 22)
                     }
-                    .frame(maxWidth: 900)
                 }
+                .frame(maxWidth: 900)
                 .padding(.trailing)
                 .screen()
             }

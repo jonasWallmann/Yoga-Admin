@@ -18,7 +18,6 @@
 		754F08372B9A2C2100CA1AB4 /* ColorSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08202B9A2C2000CA1AB4 /* ColorSelectionView.swift */; };
 		754F08382B9A2C2100CA1AB4 /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08222B9A2C2000CA1AB4 /* CardModifier.swift */; };
 		754F08392B9A2C2100CA1AB4 /* ifModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08232B9A2C2000CA1AB4 /* ifModifier.swift */; };
-		754F083A2B9A2C2100CA1AB4 /* NavTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08242B9A2C2000CA1AB4 /* NavTitleModifier.swift */; };
 		754F083B2B9A2C2100CA1AB4 /* ScreenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08252B9A2C2000CA1AB4 /* ScreenModifier.swift */; };
 		754F083C2B9A2C2100CA1AB4 /* SectionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08262B9A2C2000CA1AB4 /* SectionModifier.swift */; };
 		754F083D2B9A2C2100CA1AB4 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08282B9A2C2000CA1AB4 /* ButtonStyle.swift */; };
@@ -108,7 +107,6 @@
 		754F08202B9A2C2000CA1AB4 /* ColorSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionView.swift; sourceTree = "<group>"; };
 		754F08222B9A2C2000CA1AB4 /* CardModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 		754F08232B9A2C2000CA1AB4 /* ifModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ifModifier.swift; sourceTree = "<group>"; };
-		754F08242B9A2C2000CA1AB4 /* NavTitleModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTitleModifier.swift; sourceTree = "<group>"; };
 		754F08252B9A2C2000CA1AB4 /* ScreenModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenModifier.swift; sourceTree = "<group>"; };
 		754F08262B9A2C2000CA1AB4 /* SectionModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModifier.swift; sourceTree = "<group>"; };
 		754F08282B9A2C2000CA1AB4 /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
@@ -266,7 +264,6 @@
 			children = (
 				754F08222B9A2C2000CA1AB4 /* CardModifier.swift */,
 				754F08232B9A2C2000CA1AB4 /* ifModifier.swift */,
-				754F08242B9A2C2000CA1AB4 /* NavTitleModifier.swift */,
 				754F08252B9A2C2000CA1AB4 /* ScreenModifier.swift */,
 				754F08262B9A2C2000CA1AB4 /* SectionModifier.swift */,
 			);
@@ -395,8 +392,8 @@
 			children = (
 				754F086C2B9A2C2C00CA1AB4 /* TimetableVM.swift */,
 				754F086B2B9A2C2C00CA1AB4 /* TimetableView.swift */,
-				754F08682B9A2C2C00CA1AB4 /* TableKindPickerView.swift */,
 				754F086A2B9A2C2C00CA1AB4 /* TimetableCoursesView.swift */,
+				754F08682B9A2C2C00CA1AB4 /* TableKindPickerView.swift */,
 				754F08692B9A2C2C00CA1AB4 /* TimetableBodyView.swift */,
 				754F08672B9A2C2C00CA1AB4 /* CourseCardView.swift */,
 			);
@@ -638,7 +635,6 @@
 				754F083F2B9A2C2100CA1AB4 /* CheckBox.swift in Sources */,
 				754F088B2B9A2C2C00CA1AB4 /* TimetableCoursesView.swift in Sources */,
 				754F08732B9A2C2C00CA1AB4 /* CreateTeacherView.swift in Sources */,
-				754F083A2B9A2C2100CA1AB4 /* NavTitleModifier.swift in Sources */,
 				754F08762B9A2C2C00CA1AB4 /* CourseVM.swift in Sources */,
 				754F08462B9A2C2100CA1AB4 /* Calendar.swift in Sources */,
 			);

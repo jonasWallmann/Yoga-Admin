@@ -17,7 +17,7 @@ struct PricePickerView: View {
             Spacer()
             TextField("", value: $price, format: .currency(code: "USD"))
                 .frame(width: 125)
-                .textFieldStyle(Custom())
+                .textFieldStyle(.roundedBorder)
         }
     }
 }

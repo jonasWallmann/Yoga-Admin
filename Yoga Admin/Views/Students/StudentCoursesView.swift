@@ -22,7 +22,7 @@ struct StudentCoursesView: View {
                                 .font(.caption.bold())
                                 .foregroundStyle(Color.dark)
 
-                            CourseCardView(course: course, kind: .information, includeDay: true)
+                            CourseCardView(course: course, kind: .information, includeDay: true, teacherTag: true)
                                 .frame(width: 132)
                         }
                     }

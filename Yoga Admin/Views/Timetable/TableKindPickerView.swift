@@ -17,6 +17,7 @@ struct TableKindPickerView: View {
                     selection = kind
                 } label: {
                     Text(kind.rawValue)
+//                        .fontWeight(.medium)
                         .frame(minWidth: 100)
                         .padding(10)
                         .if(kind == selection, transform: { view in

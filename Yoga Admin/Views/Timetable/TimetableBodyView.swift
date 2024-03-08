@@ -14,7 +14,7 @@ struct TimetableBodyView: View {
     let kind: TableKind
 
     var body: some View {
-        VStack(spacing: 28) {
+        VStack(alignment: .leading, spacing: 28) {
             HStack(spacing: 56) {
                 ForEach(0 ..< dayCount, id: \.self) { dayNr in
                     Text(Calendar.dayNames[dayNr])
@@ -24,7 +24,7 @@ struct TimetableBodyView: View {
             .font(.title2)
             .fontWeight(.medium)
             .foregroundStyle(Color.dark)
-            .padding(.horizontal)
+            .padding(.horizontal, 12)
 
             ScrollView {
                 VStack(spacing: 28) {
@@ -38,7 +38,8 @@ struct TimetableBodyView: View {
                     }
                 }
                 .animation(.easeInOut, value: kind)
-                .padding()
+                .padding(12)
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
     }

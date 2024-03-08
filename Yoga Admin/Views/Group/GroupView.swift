@@ -14,10 +14,7 @@ struct GroupView: View {
     @Binding var selection: CourseGroup?
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Course Group")
-                .navTitle()
-            
+        VStack(alignment: .leading) {            
             HStack(alignment: .top, spacing: 32) {
                 if !groups.isEmpty {
                     GroupSelectionView(groups: groups, selection: $selection)

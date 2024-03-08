@@ -14,6 +14,7 @@ struct CourseCardView: View {
     let kind: TableKind
 
     var includeDay: Bool = false
+    var teacherTag: Bool = false
 
     private var registrations: [Registration]? {
         course?.registrations?.sorted(by: { left, right in
@@ -36,7 +37,7 @@ struct CourseCardView: View {
                 Group {
                     switch kind {
                     case .information:
-                        Text(course.teacher?.firstName ?? "no teacher")
+                        Text("\(teacherTag ? "by " : "")\(course.teacher?.firstName ?? "no teacher")")
 
                         VStack(alignment: .leading, spacing: 12) {
                             if includeDay {

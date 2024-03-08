@@ -20,6 +20,7 @@ struct ContentView: View {
                     NavigationLink {
                         GroupView(selection: $appVM.group)
                             .environment(appVM)
+                            .navigationTitle("Group")
                     } label: {
                         Label(appVM.group?.name ?? "New", systemImage: "tray.2")
                     }
@@ -29,6 +30,7 @@ struct ContentView: View {
                     NavigationLink {
                         RegistrationView()
                             .environment(appVM)
+                            .navigationTitle("Registration")
                     } label: {
                         Label("Registration", systemImage: "person")
                     }
@@ -36,12 +38,14 @@ struct ContentView: View {
                     NavigationLink {
                         CourseView()
                             .environment(appVM)
+                            .navigationTitle("Course")
                     } label: {
                         Label("Course", systemImage: "list.bullet.clipboard")
                     }
 
                     NavigationLink {
                         PaymentView()
+                            .navigationTitle("Payment")
                     } label: {
                         Label("Payment", systemImage: "banknote")
                     }
@@ -51,6 +55,7 @@ struct ContentView: View {
                     NavigationLink {
                         StudentsView()
                             .environment(appVM)
+                            .navigationTitle("Students")
                     } label: {
                         Label("Students", systemImage: "person.2")
                     }
@@ -58,12 +63,14 @@ struct ContentView: View {
                     NavigationLink {
                         TimetableView()
                             .environment(appVM)
+                            .navigationTitle("Timetable")
                     } label: {
                         Label("Timetable", systemImage: "table")
                     }
                     NavigationLink {
                         FinanceView()
                             .environment(appVM)
+                            .navigationTitle("Finance")
                     } label: {
                         Label("Finance", systemImage: "chart.bar")
                     }
@@ -77,7 +84,6 @@ struct ContentView: View {
                     } label: {
                         Label("Attendance", systemImage: "checkmark.circle")
                     }
-
                 }
             }
             .listStyle(.sidebar)

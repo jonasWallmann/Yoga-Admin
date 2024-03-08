@@ -32,44 +32,39 @@ struct PaymentView: View {
     @State private var isSaving = false
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 24) {
-            Text("Payments")
-                .navTitle()
-
-            if unpaidRegistrations.isEmpty {
-                EmptyView(label: "No open payments", systemImage: "checkmark.circle")
-            } else {
-                VStack(spacing: 20) {
-                    HStack {
-                        SearchField("name...", value: $searchText)
-                            .frame(maxWidth: 240)
-                        Spacer()
-                        Button("Save changes", action: save)
-                            .buttonStyle(Primary())
-                            .disabled(madeChanges.isEmpty)
-                    }
-
-                    VStack(spacing: 0) {
-                        PaymentHeaderView()
-
-                        ScrollView {
-                            VStack(spacing: 16) {
-                                ForEach(sortedUnpaidRegistrations) { registration in
-                                    PaymentRowView(registration: registration, isSaving: isSaving, madeChanges: $madeChanges)
-                                    Divider()
-                                }
-                            }
-                            .padding(20)
-                        }
-                    }
-                    .padding(.top, 20)
-                    .section(padding: 0)
+        if unpaidRegistrations.isEmpty {
+            EmptyView(label: "No open payments", systemImage: "checkmark.circle")
+        } else {
+            VStack(spacing: 20) {
+                HStack {
+                    SearchField("name...", value: $searchText)
+                        .frame(maxWidth: 240)
+                    Spacer()
+                    Button("Save changes", action: save)
+                        .buttonStyle(Primary())
+                        .disabled(madeChanges.isEmpty)
                 }
-                .frame(maxWidth: 1000)
+
+                VStack(spacing: 0) {
+                    PaymentHeaderView()
+
+                    ScrollView {
+                        VStack(spacing: 16) {
+                            ForEach(sortedUnpaidRegistrations) { registration in
+                                PaymentRowView(registration: registration, isSaving: isSaving, madeChanges: $madeChanges)
+                                Divider()
+                            }
+                        }
+                        .padding(20)
+                    }
+                }
+                .padding(.top, 20)
+                .section(padding: 0)
             }
+            .frame(maxWidth: 1000)
+            .padding(.bottom, 24)
+            .screen()
         }
-        .padding(.bottom, 24)
-        .screen()
     }
 
     private func save() {

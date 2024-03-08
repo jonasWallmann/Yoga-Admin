@@ -19,9 +19,6 @@ struct RegistrationView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Create Registration")
-                .navTitle()
-
             Button {
                 vm.save(modelContext: modelContext, students: students, registrations: registrations)
             } label: {

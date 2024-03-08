@@ -27,8 +27,9 @@ struct TimetableCoursesView: View {
                 systemImage: "table"
             )
         } else {
-            VStack(alignment: .leading, spacing: 40) {
+            VStack(alignment: .leading, spacing: 36) {
                 TableKindPickerView(selection: $vm.kind)
+                    .padding(.leading, 8)
 
                 TimetableBodyView(timeRows: vm.timeRows, dayCount: vm.days.count, kind: vm.kind)
                     .onAppear {
