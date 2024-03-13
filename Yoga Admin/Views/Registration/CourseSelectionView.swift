@@ -8,6 +8,8 @@
 import SwiftData
 import SwiftUI
 
+private let LEADING_PADDING: CGFloat = 24
+
 struct CourseSelectionView: View {
     @Binding var selection: Course?
 
@@ -19,11 +21,14 @@ struct CourseSelectionView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Text("Course")
-                .font(.headline)
-                .foregroundStyle(Color.darkest)
-            Divider()
-                .padding(.trailing, 24)
+            Group {
+                Text("Course")
+                    .font(.headline)
+                    .foregroundStyle(Color.darkest)
+                Divider()
+                    .padding(.trailing, 24)
+            }
+            .padding(.leading, LEADING_PADDING)
 
             if courses.isEmpty {
                 Label("Create a course to register a student", systemImage: "list.bullet.clipboard")
@@ -32,19 +37,20 @@ struct CourseSelectionView: View {
 
             } else {
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 26) {
+                    VStack(alignment: .leading, spacing: 16) {
                         ForEach(0 ..< 7) { day in
                             let courses = onDay(day)
-                            
-                            if !courses.isEmpty {
-                                VStack(alignment: .leading, spacing: 12) {
+
+                            VStack(alignment: .leading, spacing: 0) {
+                                if !courses.isEmpty {
                                     Text(Calendar.dayNames[day].uppercased())
                                         .foregroundStyle(Color.darkest)
                                         .font(.caption.bold())
                                         .tracking(0.8)
-                                    
+                                        .padding(.leading, LEADING_PADDING)
+
                                     ForEach(courses) { course in
-                                        DotOption(label: course.name, addition: course.time, isSelected: selection == course) {
+                                        DotOption(label: course.name, addition: course.time, isSelected: selection == course, hPadding: LEADING_PADDING, vPadding: 8) {
                                             selection = course
                                         }
                                     }
@@ -53,7 +59,6 @@ struct CourseSelectionView: View {
                         }
                     }
                     .padding(.bottom, 28)
-                    .padding(.trailing, 24)
                 }
             }
         }
@@ -72,9 +77,9 @@ struct CourseSelectionView: View {
 }
 
 #Preview {
-    let content = PreviewHelper.content
+    let data = PreviewHelper.data
 
-    return CourseSelectionView(selection: .constant(nil), group: CourseGroup(name: "2024 Q1", number: 1))
-        .modelContainer(content.container)
-        .environment(content.appVM)
+    @State var selection: Course? = data.course
+
+    return CourseSelectionView(selection: $selection, group: data.group)
 }

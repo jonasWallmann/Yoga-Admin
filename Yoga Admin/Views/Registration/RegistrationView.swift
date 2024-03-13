@@ -34,7 +34,6 @@ struct RegistrationView: View {
                     .card()
 
                 CourseSelectionView(selection: $vm.course, group: appVM.group)
-                    .padding(.leading, 24)
                     .padding(.top, 20)
                     .card(hasPadding: false)
             }

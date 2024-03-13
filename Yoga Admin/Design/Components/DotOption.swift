@@ -13,6 +13,9 @@ struct DotOption: View {
 
     let isSelected: Bool
 
+    var hPadding: CGFloat = 0
+    var vPadding: CGFloat = 0
+
     let selectionCallback: () -> Void
 
     var body: some View {
@@ -37,6 +40,9 @@ struct DotOption: View {
                 }
             }
             .foregroundStyle(Color.dark)
+            .padding(.horizontal, hPadding)
+            .padding(.vertical, vPadding)
+            .background(.snow)
         }
         .buttonStyle(.plain)
     }
