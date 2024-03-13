@@ -5,7 +5,7 @@
 //  Created by Jonas Wallmann on 17.02.24.
 //
 
-import Foundation
+import SwiftUI
 import SwiftData
 
 @Observable
@@ -51,7 +51,10 @@ class CourseVM {
             }
 
             let newCourse = Course(name: name, color: color, start: start, end: end, price: price, kind: kind, teacher: contextTeacher, group: contextGroup)
-            modelContext.insert(newCourse)
+
+            withAnimation {
+                modelContext.insert(newCourse)
+            }
 
             resetInputs()
         } else {
@@ -79,5 +82,20 @@ class CourseVM {
         endTime = .now + 3600
         price = nil
         teacher = nil
+    }
+
+    public func useTemplate(course: Course) {
+        name = course.name
+        color = course.color
+
+        startDate = course.end.addingTimeInterval(3600 * 24 * 7)
+        endDate = course.end.addingTimeInterval(3600 * 24 * 7 * Double(course.lessonCount))
+
+        startTime = course.start
+        endTime = course.end
+
+        price = course.price
+        kind = course.kind
+        teacher = course.teacher
     }
 }

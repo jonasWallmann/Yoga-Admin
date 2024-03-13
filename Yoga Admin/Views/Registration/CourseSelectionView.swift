@@ -34,19 +34,17 @@ struct CourseSelectionView: View {
                 Label("Create a course to register a student", systemImage: "list.bullet.clipboard")
                     .foregroundStyle(Color.dark)
                     .padding(.bottom, 20)
-
+                    .padding(.leading, LEADING_PADDING)
             } else {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 16) {
                         ForEach(0 ..< 7) { day in
-                            let courses = onDay(day)
+                            let courses = Course.onDay(day, courses: courses)
 
-                            VStack(alignment: .leading, spacing: 0) {
-                                if !courses.isEmpty {
+                            if courses.isEmpty == false {
+                                VStack(alignment: .leading, spacing: 0) {
                                     Text(Calendar.dayNames[day].uppercased())
-                                        .foregroundStyle(Color.darkest)
-                                        .font(.caption.bold())
-                                        .tracking(0.8)
+                                        .tagLine()
                                         .padding(.leading, LEADING_PADDING)
 
                                     ForEach(courses) { course in
@@ -64,13 +62,6 @@ struct CourseSelectionView: View {
         }
     }
 
-    private func onDay(_ day: Int) -> [Course] {
-        courses.filter { course in
-            Calendar.weekday(from: course.start) == day
-        }
-        .sorted(by: { Calendar.hour(from: $0.start) < Calendar.hour(from: $1.start) })
-    }
-
     private func dot(for course: Course) -> String {
         course == selection ? "smallcircle.filled.circle" : "circle"
     }
@@ -82,4 +73,6 @@ struct CourseSelectionView: View {
     @State var selection: Course? = data.course
 
     return CourseSelectionView(selection: $selection, group: data.group)
+        .padding(.top, 24)
+        .background(.snow)
 }

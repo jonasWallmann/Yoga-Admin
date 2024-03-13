@@ -59,6 +59,15 @@ extension Course {
     public var startsInDays: Int {
         return Int(start.timeIntervalSince(.now) / 3600 / 24)
     }
+
+    static public func onDay(_ day: Int, courses: [Course]?) -> [Course] {
+        guard let courses = courses else { return [] }
+
+        return courses.filter { course in
+            Calendar.weekday(from: course.start) == day
+        }
+        .sorted(by: { Calendar.hour(from: $0.start) < Calendar.hour(from: $1.start) })
+    }
 }
 
 extension Student {

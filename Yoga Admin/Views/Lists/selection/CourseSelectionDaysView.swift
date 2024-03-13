@@ -13,7 +13,7 @@ struct CourseSelectionDaysView: View {
     var body: some View {
         VStack(spacing: 26) {
             ForEach(0 ..< 7) { dayIndex in
-                let courses = onDay(dayIndex)
+                let courses = Course.onDay(dayIndex, courses: vm.courses)
 
                 if courses.isEmpty == false {
                     VStack(alignment: .leading, spacing: 12) {
@@ -31,14 +31,6 @@ struct CourseSelectionDaysView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
-
-    private func onDay(_ day: Int) -> [Course] {
-        vm.courses.filter { course in
-            Calendar.weekday(from: course.start) == day
-        }
-        .sorted(by: { Calendar.hour(from: $0.start) < Calendar.hour(from: $1.start) })
-    }
-
 }
 
 #Preview {

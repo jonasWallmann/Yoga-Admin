@@ -2,73 +2,43 @@
 //  CourseView.swift
 //  Yoga Admin
 //
-//  Created by Jonas Wallmann on 17.02.24.
+//  Created by Jonas Wallmann on 13.03.24.
 //
 
-import SwiftData
 import SwiftUI
 
 struct CourseView: View {
-    @Environment(\.modelContext) private var modelContext
     @Environment(AppVM.self) private var appVM
 
     @State private var vm = CourseVM()
 
     var body: some View {
-        if appVM.group != nil {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 30) {
-                    if vm.showingValidation {
-                        Text("validation error")
-                    }
+        if let group = appVM.group {
+            HStack(alignment: .top, spacing: 0) {
+                ExistingCoursesView(vm: vm)
+                    .padding(.top, 20)
+                    .padding(.horizontal, 20)
+                    .background(.snow)
+                    .frame(maxWidth: 370)
 
-                    VStack(alignment: .leading, spacing: 24) {
-                        TextFieldV("name...", text: $vm.name, showingValidation: vm.showingValidation)
-                        ColorSelectionView(selectedColor: $vm.color)
-                    }
-                    .frame(maxWidth: 420)
-                    .section()
-
-                    HStack(spacing: 50) {
-                        DatePickerView(start: $vm.startDate, end: $vm.endDate, components: .date)
-                        DatePickerView(start: $vm.startTime, end: $vm.endTime, components: .hourAndMinute)
-                    }
-                    .section()
-
-                    VStack(alignment: .leading, spacing: 16) {
-                        PricePickerView(price: $vm.price)
-                            .frame(maxWidth: 220)
-//                                KindPickerView(kind: $vm.kind)
-                        TeacherSelectionView(vm: vm)
-                    }
-                    .section()
-
-                    Button {
-                        vm.createCourse(modelContext: modelContext, group: appVM.group)
-                    } label: {
-                        Text("Create")
-                            .frame(width: 200)
-                    }
-                    .buttonStyle(Primary())
-                    .disabled(!vm.validInput || appVM.group == nil)
+                VStack(alignment: .leading, spacing: 20) {
+                    Text("New course for \(group.name)")
+                        .font(.title)
+                        .foregroundStyle(.darkest)
+                    NewCourseFormView(vm: vm)
                 }
-                .frame(maxWidth: 600)
-                .textFieldStyle(Custom())
-            }
-            .screen()
-            .sheet(isPresented: $vm.showingCreateTeacherSheet) {
-                CreateTeacherView()
+                .screen(leadingPadding: 32, topPadding: 32)
             }
         } else {
-            EmptyView(label: "Please select a course group to create courses", subLabel: "You can find the form in the first screen of the sidebar", systemImage: "tray.2")
+            EmptyView(label: "You need to create a course group for a new course", subLabel: "The option is under group as the first item of the sidebar", systemImage: "tray.2")
         }
     }
 }
 
-#Preview {
-    let (container, appVM) = PreviewHelper.content
+#Preview(traits: traits) {
+    let content = PreviewHelper.content
 
     return CourseView()
-        .modelContainer(container)
-        .environment(appVM)
+        .environment(content.appVM)
+        .modelContainer(content.container)
 }

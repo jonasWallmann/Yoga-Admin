@@ -38,7 +38,7 @@ struct ContentView: View {
                     NavigationLink {
                         CourseView()
                             .environment(appVM)
-                            .navigationTitle("Course")
+                            .navigationTitle("New Course")
                     } label: {
                         Label("Course", systemImage: "list.bullet.clipboard")
                     }

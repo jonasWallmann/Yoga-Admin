@@ -34,7 +34,7 @@
 		754F08722B9A2C2C00CA1AB4 /* LessonColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08492B9A2C2C00CA1AB4 /* LessonColumnView.swift */; };
 		754F08732B9A2C2C00CA1AB4 /* CreateTeacherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F084B2B9A2C2C00CA1AB4 /* CreateTeacherView.swift */; };
 		754F08742B9A2C2C00CA1AB4 /* TeacherSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F084C2B9A2C2C00CA1AB4 /* TeacherSelectionView.swift */; };
-		754F08752B9A2C2C00CA1AB4 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F084E2B9A2C2C00CA1AB4 /* CourseView.swift */; };
+		754F08752B9A2C2C00CA1AB4 /* NewCourseFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F084E2B9A2C2C00CA1AB4 /* NewCourseFormView.swift */; };
 		754F08762B9A2C2C00CA1AB4 /* CourseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F084F2B9A2C2C00CA1AB4 /* CourseVM.swift */; };
 		754F08772B9A2C2C00CA1AB4 /* KindPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08502B9A2C2C00CA1AB4 /* KindPickerView.swift */; };
 		754F08782B9A2C2C00CA1AB4 /* FinanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08522B9A2C2C00CA1AB4 /* FinanceView.swift */; };
@@ -67,6 +67,9 @@
 		754F089F2B9A2D6800CA1AB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F089E2B9A2D6800CA1AB4 /* ContentView.swift */; };
 		757A59182B9C92AA00B1C6E9 /* ReRegistrationCourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A59172B9C92AA00B1C6E9 /* ReRegistrationCourseInfoView.swift */; };
 		757A591A2B9C964F00B1C6E9 /* StudentsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A59192B9C964F00B1C6E9 /* StudentsVM.swift */; };
+		75961E262BA1969B00C8F516 /* ExistingCoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75961E252BA1969B00C8F516 /* ExistingCoursesView.swift */; };
+		75961E282BA19BD100C8F516 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75961E272BA19BD100C8F516 /* CourseView.swift */; };
+		75961E2A2BA1AA8600C8F516 /* TagLineModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75961E292BA1AA8600C8F516 /* TagLineModifier.swift */; };
 		75C04B362B9B51FF003D499A /* CourseSelectionDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C04B352B9B51FF003D499A /* CourseSelectionDaysView.swift */; };
 		75C04B392B9C80B8003D499A /* ReRegistrationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C04B382B9C80B8003D499A /* ReRegistrationTableView.swift */; };
 		75CBE5262B9A3292006A6E8A /* AttendanceCourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE5252B9A3292006A6E8A /* AttendanceCourseInfoView.swift */; };
@@ -130,7 +133,7 @@
 		754F08492B9A2C2C00CA1AB4 /* LessonColumnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonColumnView.swift; sourceTree = "<group>"; };
 		754F084B2B9A2C2C00CA1AB4 /* CreateTeacherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTeacherView.swift; sourceTree = "<group>"; };
 		754F084C2B9A2C2C00CA1AB4 /* TeacherSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSelectionView.swift; sourceTree = "<group>"; };
-		754F084E2B9A2C2C00CA1AB4 /* CourseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		754F084E2B9A2C2C00CA1AB4 /* NewCourseFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCourseFormView.swift; sourceTree = "<group>"; };
 		754F084F2B9A2C2C00CA1AB4 /* CourseVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseVM.swift; sourceTree = "<group>"; };
 		754F08502B9A2C2C00CA1AB4 /* KindPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KindPickerView.swift; sourceTree = "<group>"; };
 		754F08522B9A2C2C00CA1AB4 /* FinanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceView.swift; sourceTree = "<group>"; };
@@ -163,6 +166,9 @@
 		754F089E2B9A2D6800CA1AB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		757A59172B9C92AA00B1C6E9 /* ReRegistrationCourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReRegistrationCourseInfoView.swift; sourceTree = "<group>"; };
 		757A59192B9C964F00B1C6E9 /* StudentsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsVM.swift; sourceTree = "<group>"; };
+		75961E252BA1969B00C8F516 /* ExistingCoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingCoursesView.swift; sourceTree = "<group>"; };
+		75961E272BA19BD100C8F516 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		75961E292BA1AA8600C8F516 /* TagLineModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLineModifier.swift; sourceTree = "<group>"; };
 		75C04B352B9B51FF003D499A /* CourseSelectionDaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSelectionDaysView.swift; sourceTree = "<group>"; };
 		75C04B382B9C80B8003D499A /* ReRegistrationTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReRegistrationTableView.swift; sourceTree = "<group>"; };
 		75CBE5252B9A3292006A6E8A /* AttendanceCourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceCourseInfoView.swift; sourceTree = "<group>"; };
@@ -280,6 +286,7 @@
 				754F08232B9A2C2000CA1AB4 /* ifModifier.swift */,
 				754F08252B9A2C2000CA1AB4 /* ScreenModifier.swift */,
 				754F08262B9A2C2000CA1AB4 /* SectionModifier.swift */,
+				75961E292BA1AA8600C8F516 /* TagLineModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -343,8 +350,10 @@
 			isa = PBXGroup;
 			children = (
 				754F084F2B9A2C2C00CA1AB4 /* CourseVM.swift */,
-				754F084E2B9A2C2C00CA1AB4 /* CourseView.swift */,
+				75961E272BA19BD100C8F516 /* CourseView.swift */,
+				754F084E2B9A2C2C00CA1AB4 /* NewCourseFormView.swift */,
 				754F08502B9A2C2C00CA1AB4 /* KindPickerView.swift */,
+				75961E252BA1969B00C8F516 /* ExistingCoursesView.swift */,
 				754F084D2B9A2C2C00CA1AB4 /* teacher */,
 			);
 			path = Course;
@@ -626,7 +635,7 @@
 				754F08882B9A2C2C00CA1AB4 /* CourseCardView.swift in Sources */,
 				754F08452B9A2C2100CA1AB4 /* TextFieldV.swift in Sources */,
 				754F087F2B9A2C2C00CA1AB4 /* CourseSelectionView.swift in Sources */,
-				754F08752B9A2C2C00CA1AB4 /* CourseView.swift in Sources */,
+				754F08752B9A2C2C00CA1AB4 /* NewCourseFormView.swift in Sources */,
 				754F08872B9A2C2C00CA1AB4 /* StudentsView.swift in Sources */,
 				757A591A2B9C964F00B1C6E9 /* StudentsVM.swift in Sources */,
 				754F087D2B9A2C2C00CA1AB4 /* PaymentRowView.swift in Sources */,
@@ -640,8 +649,10 @@
 				754F08782B9A2C2C00CA1AB4 /* FinanceView.swift in Sources */,
 				754F087C2B9A2C2C00CA1AB4 /* PaymentHeaderView.swift in Sources */,
 				754F08742B9A2C2C00CA1AB4 /* TeacherSelectionView.swift in Sources */,
+				75961E262BA1969B00C8F516 /* ExistingCoursesView.swift in Sources */,
 				754F08432B9A2C2100CA1AB4 /* PricePickerView.swift in Sources */,
 				754F08392B9A2C2100CA1AB4 /* ifModifier.swift in Sources */,
+				75961E2A2BA1AA8600C8F516 /* TagLineModifier.swift in Sources */,
 				754F08412B9A2C2100CA1AB4 /* DotOption.swift in Sources */,
 				75CBE5262B9A3292006A6E8A /* AttendanceCourseInfoView.swift in Sources */,
 				75D59CE82B9B4CFE0021324B /* ListVM.swift in Sources */,
@@ -652,6 +663,7 @@
 				754F08362B9A2C2100CA1AB4 /* ColorOptionView.swift in Sources */,
 				754F08772B9A2C2C00CA1AB4 /* KindPickerView.swift in Sources */,
 				754F083B2B9A2C2100CA1AB4 /* ScreenModifier.swift in Sources */,
+				75961E282BA19BD100C8F516 /* CourseView.swift in Sources */,
 				757A59182B9C92AA00B1C6E9 /* ReRegistrationCourseInfoView.swift in Sources */,
 				754F08972B9A2C6800CA1AB4 /* DebugView.swift in Sources */,
 				754F08852B9A2C2C00CA1AB4 /* StudentPersonalInformationView.swift in Sources */,

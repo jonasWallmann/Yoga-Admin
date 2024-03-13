@@ -507,6 +507,38 @@ class PreviewHelper {
 
         createRegistrations(courses: allCourses, students: allStudents, context: context)
 
+        // previous course group
+        let previousGroup = CourseGroup(name: "2023 Q4", number: 0)
+        context.insert(previousGroup)
+
+        let previousCourseMonday1 = Course(
+            name: "Beginners",
+            color: .orange,
+            start: Calendar.dateTime(day: 16, month: 10, year: 2023, hour: 9, minute: 30),
+            end: Calendar.dateTime(day: 18, month: 12, year: 2023, hour: 11, minute: 0),
+            price: 100,
+            kind: .regular,
+            level: nil,
+            teacher: teacher1,
+            group: previousGroup
+        )
+
+        let previousCourseTuesday3 = Course(
+            name: "Medium",
+            color: .green,
+            start: Calendar.dateTime(day: 17, month: 10, year: 2023, hour: 18, minute: 0),
+            end: Calendar.dateTime(day: 19, month: 12, year: 2023, hour: 19, minute: 30),
+            price: 140,
+            kind: .regular,
+            level: nil,
+            teacher: teacher2,
+            group: previousGroup
+        )
+
+        let allPreviousCourses = [previousCourseMonday1, previousCourseTuesday3]
+
+        insert(allPreviousCourses, context: context)
+
         return (courseMonday1, student1, allCourses, allStudents, group)
     }
 
