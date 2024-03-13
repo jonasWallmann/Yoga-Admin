@@ -24,6 +24,7 @@ struct KindPickerView: View {
                 }
             }
             .tint(Color.accent)
+            .labelsHidden()
         }
         .frame(maxWidth: 220)
     }

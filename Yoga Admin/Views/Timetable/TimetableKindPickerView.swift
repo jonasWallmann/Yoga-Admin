@@ -11,20 +11,22 @@ struct TimetableKindPickerView: View {
     @Binding var selection: TableKind
 
     var body: some View {
-        HStack(spacing: 20) {
+        HStack {
             ForEach(TableKind.allCases, id: \.self) { kind in
                 Button {
                     selection = kind
                 } label: {
                     Text(kind.rawValue)
                         .frame(minWidth: 100)
-                        .padding(10)
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 16)
                         .if(kind == selection, transform: { view in
                             view
                                 .background(Color.accent)
                                 .foregroundStyle(.white)
                                 .clipShape(Capsule())
                         })
+                        .background(.snow)
                 }
                 .buttonStyle(.plain)
             }
@@ -39,4 +41,6 @@ struct TimetableKindPickerView: View {
     @State var kind: TableKind = .information
 
     return TimetableKindPickerView(selection: $kind)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.lightest)
 }
