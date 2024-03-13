@@ -10,10 +10,12 @@ import SwiftUI
 struct ColorSelectionView: View {
     @Binding var selectedColor: ColorEnum?
 
+    var isPale: Bool = false
+
     var body: some View {
         HStack(spacing: 15) {
             ForEach(ColorEnum.allCases) { option in
-                ColorOptionView(color: option, selectedColor: $selectedColor)
+                ColorOptionView(color: option, selectedColor: $selectedColor, isPale: isPale)
                     .frame(maxWidth: .infinity)
             }
         }

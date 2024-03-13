@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ColorOptionView: View {
+    @Environment(\.colorScheme) private var colorScheme
+
     let color: ColorEnum
 
     @Binding var selectedColor: ColorEnum?
+
+    let isPale: Bool
+
+    private var previewColor: Color {
+        isPale ? Color.paleFor(color: color, scheme: colorScheme) : color.value
+    }
 
     var body: some View {
         Button {
@@ -33,7 +41,7 @@ struct ColorOptionView: View {
                             .frame(width: 32)
                     }
                 }
-                .foregroundStyle(color.value)
+                .foregroundStyle(previewColor)
         }
         .buttonStyle(.plain)
     }
@@ -41,8 +49,8 @@ struct ColorOptionView: View {
 
 #Preview {
     HStack {
-        ColorOptionView(color: .blue, selectedColor: .constant(.blue))
-        ColorOptionView(color: .red, selectedColor: .constant(.blue))
+        ColorOptionView(color: .blue, selectedColor: .constant(.blue), isPale: false)
+        ColorOptionView(color: .red, selectedColor: .constant(.blue), isPale: false)
     }
     .padding(100)
 }
