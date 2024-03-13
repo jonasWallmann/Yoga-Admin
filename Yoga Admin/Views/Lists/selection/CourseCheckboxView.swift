@@ -24,15 +24,18 @@ struct CourseCheckboxView: View {
                     self.isSelected.toggle()
                 }
             }
+            .onAppear {
+                isSelected = vm.selectedCourses.contains(course)
+            }
     }
 }
 
 #Preview {
     let data = PreviewHelper.data
 
-    func doSomething(_: Course) {}
+    func doSomething(with courses: [Course]) {}
 
     return CourseCheckboxView(course: data.course)
-        .environment(CourseSelectionsVM())
+        .environment(CourseSelectionsVM(courses: [data.course], selectionCallback: doSomething))
         .padding()
 }

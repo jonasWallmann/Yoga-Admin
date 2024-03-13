@@ -25,9 +25,9 @@ struct ColorOptionView: View {
                             .stroke(lineWidth: 3)
                             .frame(width: 32)
 
-                        Circle()
-                            .frame(width: 8)
-                            .offset(y: 26)
+//                        Circle()
+//                            .frame(width: 8)
+//                            .offset(y: 26)
                     } else {
                         Circle()
                             .frame(width: 32)

@@ -10,6 +10,10 @@ import SwiftUI
 struct StudentPaymentsView: View {
     let registrations: [Registration]
 
+    var sortedRegistrations: [Registration] {
+        registrations.sorted(by: { $0.timestamp > $1.timestamp })
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Payments")
@@ -17,7 +21,7 @@ struct StudentPaymentsView: View {
             Divider()
 
             VStack(alignment: .leading, spacing: 20) {
-                ForEach(registrations) { registration in
+                ForEach(sortedRegistrations) { registration in
                     StudentPaymentsRowView(registration: registration)
                 }
             }

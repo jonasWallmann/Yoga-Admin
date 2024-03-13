@@ -11,13 +11,7 @@ import SwiftUI
 struct StudentsView: View {
     @Query private var students: [Student]
 
-    @State private var student: Student?
-
-    var registrations: [Registration]? {
-        guard let registrations = student?.registrations else { return nil }
-
-        return registrations.isEmpty ? nil : registrations
-    }
+    @State private var vm = StudentsVM()
 
     var body: some View {
         if students.isEmpty {
@@ -25,38 +19,46 @@ struct StudentsView: View {
 
         } else {
             HStack(alignment: .top, spacing: 0) {
-                StudentsSearchView(selection: $student)
+                StudentsSearchView(vm: vm)
                     .frame(minWidth: 180, maxWidth: 240)
+                if let student = vm.student {
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text(student.name)
+                            .font(.largeTitle)
+                            .foregroundStyle(.darkest)
 
-                HStack(alignment: .top, spacing: 32) {
-                    if let student = student {
-                        if let registrations = registrations {
-                            StudentCoursesView(registrations: registrations)
-                                .padding(.horizontal, -16)
-                            StudentPaymentsView(registrations: registrations)
-                                .card()
-                                .padding(.top, 22)
-                        } else {
-                            Text("No registrations")
-                                .foregroundStyle(Color.dark)
+                        HStack(alignment: .top, spacing: 32) {
+                            if let registrations = vm.registrations {
+                                StudentCoursesView(registrations: registrations)
+                                    .padding(.horizontal, -16)
+                                StudentPaymentsView(registrations: registrations)
+                                    .card()
+                                    .padding(.top, 22)
+                            } else {
+                                Text("No registrations")
+                                    .foregroundStyle(Color.dark)
+                                    .card()
+                                    .padding(.top, 22)
+                            }
+
+                            StudentPersonalInformationView(student: student)
                                 .card()
                                 .padding(.top, 22)
                         }
-
-                        StudentPersonalInformationView(student: student)
-                            .card()
-                            .padding(.top, 22)
                     }
+                    .frame(maxWidth: 900)
+                    .screen(leadingPadding: 36, topPadding: 36)
+                } else {
+                    Text("")
+                        .screen()
                 }
-                .frame(maxWidth: 900)
-                .padding(.trailing)
-                .screen()
+                Spacer()
             }
         }
     }
 }
 
-#Preview {
+#Preview(traits: traits) {
     let (container, appVM) = PreviewHelper.content
 
     return StudentsView()

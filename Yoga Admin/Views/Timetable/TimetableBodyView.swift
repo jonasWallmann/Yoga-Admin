@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+private let H_SPACING: CGFloat = 52
+private let MIN_WIDTH: CGFloat = 104
+private let MAX_Width: CGFloat = 112
+
 struct TimetableBodyView: View {
     let timeRows: [[Course?]]
     let dayCount: Int
@@ -14,11 +18,11 @@ struct TimetableBodyView: View {
     let kind: TableKind
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 28) {
-            HStack(spacing: 56) {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: H_SPACING) {
                 ForEach(0 ..< dayCount, id: \.self) { dayNr in
                     Text(Calendar.dayNames[dayNr])
-                        .frame(minWidth: 100, maxWidth: 120)
+                        .frame(minWidth: MIN_WIDTH, maxWidth: MAX_Width)
                 }
             }
             .font(.title2)
@@ -27,12 +31,12 @@ struct TimetableBodyView: View {
             .padding(.horizontal, 12)
 
             ScrollView {
-                VStack(spacing: 28) {
+                VStack(spacing: 32) {
                     ForEach(0 ..< timeRows.count, id: \.self) { rowNumber in
-                        HStack(alignment: .top, spacing: 56) {
+                        HStack(alignment: .top, spacing: H_SPACING) {
                             ForEach(0 ..< timeRows[rowNumber].count, id: \.self) { courseNumber in
                                 CourseCardView(course: timeRows[rowNumber][courseNumber], kind: kind)
-                                    .frame(minWidth: 100, maxWidth: 120)
+                                    .frame(minWidth: MIN_WIDTH, maxWidth: MAX_Width)
                             }
                         }
                     }
@@ -45,9 +49,12 @@ struct TimetableBodyView: View {
     }
 }
 
-#Preview {
-    let (course, _) = PreviewHelper.data
+#Preview(traits: .fixedLayout(width: 850, height: 700)) {
+    let data = PreviewHelper.data
 
-    return TimetableBodyView(timeRows: [[course, course]], dayCount: 2, kind: .information)
-        .padding()
+    let vm = TimetableVM()
+    vm.create(for: data.courses)
+
+    return TimetableBodyView(timeRows: vm.timeRows, dayCount: 5, kind: .information)
+        .screen()
 }

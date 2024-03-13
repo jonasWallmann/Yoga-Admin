@@ -21,7 +21,7 @@ struct ScreenModifier: ViewModifier {
 }
 
 extension View {
-    public func screen(leadingPadding: CGFloat = 24, topPadding: CGFloat = 26) -> some View {
+    public func screen(leadingPadding: CGFloat = 24, topPadding: CGFloat = 24) -> some View {
         modifier(ScreenModifier(leadingPadding: leadingPadding, topPadding: topPadding))
     }
 }

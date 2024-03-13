@@ -1,23 +1,22 @@
 //
-//  CardBodyPickerView.swift
+//  ListKindPickerView.swift
 //  Yoga Admin
 //
-//  Created by Jonas Wallmann on 21.02.24.
+//  Created by Jonas Wallmann on 08.03.24.
 //
 
 import SwiftUI
 
-struct TableKindPickerView: View { 
-    @Binding var selection: TableKind
+struct ListKindPickerView: View {
+    @Binding var selection: ListKindEnum
 
     var body: some View {
         HStack(spacing: 20) {
-            ForEach(TableKind.allCases, id: \.self) { kind in
+            ForEach(ListKindEnum.allCases, id: \.self) { kind in
                 Button {
                     selection = kind
                 } label: {
                     Text(kind.rawValue)
-//                        .fontWeight(.medium)
                         .frame(minWidth: 100)
                         .padding(10)
                         .if(kind == selection, transform: { view in
@@ -37,7 +36,7 @@ struct TableKindPickerView: View {
 }
 
 #Preview {
-    @State var kind: TableKind = .information
-
-    return TableKindPickerView(selection: $kind)
+    @State var selection: ListKindEnum = .attendance
+    
+    return ListKindPickerView(selection: $selection)
 }

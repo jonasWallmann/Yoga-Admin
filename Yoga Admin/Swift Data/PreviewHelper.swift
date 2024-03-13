@@ -23,7 +23,7 @@ class PreviewHelper {
         return (container, AppVM(group: group))
     }()
 
-    static let data: (course: Course, student: Student) = {
+    static let data: (course: Course, student: Student, courses: [Course], students: [Student]) = {
         let container = getContainer()
         let group = getGroup()
 
@@ -51,7 +51,7 @@ class PreviewHelper {
 
     // MARK: Sample data --------------------------------------------------------------------------
 
-    static public func createSampleDate(context: ModelContext, group: CourseGroup) -> (course: Course, student: Student) {
+    static public func createSampleDate(context: ModelContext, group: CourseGroup) -> (course: Course, student: Student, courses: [Course], students: [Student]) {
         context.insert(group)
 
         // Teacher
@@ -507,7 +507,7 @@ class PreviewHelper {
 
         createRegistrations(courses: allCourses, students: allStudents, context: context)
 
-        return (courseMonday1, student1)
+        return (courseMonday1, student1, allCourses, allStudents)
     }
 
     static private func insert<T: PersistentModel>(_ objects: [T], context: ModelContext) {

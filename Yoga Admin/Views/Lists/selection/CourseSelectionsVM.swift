@@ -5,11 +5,20 @@
 //  Created by Jonas Wallmann on 07.03.24.
 //
 
-import SwiftUI
+import Foundation
 
 @Observable
 class CourseSelectionsVM {
+    private(set) var courses: [Course]
     private(set) var selectedCourses = [Course]()
+
+    public let selectionCallback: ([Course]) -> Void
+
+    init(courses: [Course], selectedCourses: [Course] = [], selectionCallback: @escaping ([Course]) -> Void) {
+        self.courses = courses
+        self.selectedCourses = selectedCourses
+        self.selectionCallback = selectionCallback
+    }
 
     public func courses(_ courses: [Course] = [], areIncluded: Bool) {
         if areIncluded {
@@ -31,14 +40,12 @@ class CourseSelectionsVM {
     }
 
     public func course(_ course: Course, isIncluded: Bool) {
-        withAnimation(.easeOut(duration: 0.7)) {
-            if isIncluded {
-                if selectedCourses.contains(course) { return }
+        if isIncluded {
+            if selectedCourses.contains(course) { return }
 
-                selectedCourses.insert(course, at: 0)
-            } else {
-                selectedCourses.removeAll(where: { $0 == course })
-            }
+            selectedCourses.insert(course, at: 0)
+        } else {
+            selectedCourses.removeAll(where: { $0 == course })
         }
     }
 }

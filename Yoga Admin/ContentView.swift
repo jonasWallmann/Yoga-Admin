@@ -67,23 +67,22 @@ struct ContentView: View {
                     } label: {
                         Label("Timetable", systemImage: "table")
                     }
-                    NavigationLink {
-                        FinanceView()
-                            .environment(appVM)
-                            .navigationTitle("Finance")
-                    } label: {
-                        Label("Finance", systemImage: "chart.bar")
-                    }
-                }
 
-                Section("PRINTS") {
                     NavigationLink {
-                        AttendanceView()
+                        ListView()
                             .environment(appVM)
-                            .navigationTitle("Attendance")
+                            .navigationTitle("Course lists")
                     } label: {
-                        Label("Attendance", systemImage: "checkmark.circle")
+                        Label("Course lists", systemImage: "list.bullet.rectangle.portrait")
                     }
+
+//                    NavigationLink {
+//                        FinanceView()
+//                            .environment(appVM)
+//                            .navigationTitle("Finance")
+//                    } label: {
+//                        Label("Finance", systemImage: "chart.bar")
+//                    }
                 }
             }
             .listStyle(.sidebar)

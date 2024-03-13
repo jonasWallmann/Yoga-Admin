@@ -96,7 +96,6 @@ struct StudentPersonalInformationView: View {
                     }
                 }
         }
-        .textFieldStyle(.roundedBorder)
         .onAppear {
             setStudentInformation(for: student)
         }

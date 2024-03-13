@@ -21,6 +21,7 @@ struct StudentCoursesView: View {
                             Text(groupLabel(for: course).uppercased())
                                 .font(.caption.bold())
                                 .foregroundStyle(Color.dark)
+                                .tracking(1.06)
 
                             CourseCardView(course: course, kind: .information, includeDay: true, teacherTag: true)
                                 .frame(width: 132)

@@ -48,7 +48,7 @@ struct CourseCardView: View {
 
                             Text(course.times)
                         }
-                        .font(.footnote)
+                        .font(.system(size: 12))
                     case .students:
                         if let registrations = registrations {
                             VStack(alignment: .leading, spacing: 12) {

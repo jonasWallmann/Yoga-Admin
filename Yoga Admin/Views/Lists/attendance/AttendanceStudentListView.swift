@@ -10,9 +10,13 @@ import SwiftUI
 struct AttendanceStudentListView: View {
     let students: [Student]
 
+    private var sortedStudents: [Student] {
+        students.sorted(by: { $0.name < $1.name })
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            ForEach(students) { student in
+            ForEach(sortedStudents) { student in
                 VStack(alignment: .leading, spacing: 0) {
                     Divider()
 

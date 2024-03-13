@@ -14,6 +14,7 @@ struct ColorSelectionView: View {
         HStack(spacing: 15) {
             ForEach(ColorEnum.allCases) { option in
                 ColorOptionView(color: option, selectedColor: $selectedColor)
+                    .frame(maxWidth: .infinity)
             }
         }
     }

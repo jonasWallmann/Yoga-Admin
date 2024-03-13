@@ -31,7 +31,6 @@
 		754F08452B9A2C2100CA1AB4 /* TextFieldV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08312B9A2C2000CA1AB4 /* TextFieldV.swift */; };
 		754F08462B9A2C2100CA1AB4 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08332B9A2C2000CA1AB4 /* Calendar.swift */; };
 		754F08702B9A2C2C00CA1AB4 /* AttendanceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08472B9A2C2C00CA1AB4 /* AttendanceTableView.swift */; };
-		754F08712B9A2C2C00CA1AB4 /* AttendanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08482B9A2C2C00CA1AB4 /* AttendanceView.swift */; };
 		754F08722B9A2C2C00CA1AB4 /* LessonColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08492B9A2C2C00CA1AB4 /* LessonColumnView.swift */; };
 		754F08732B9A2C2C00CA1AB4 /* CreateTeacherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F084B2B9A2C2C00CA1AB4 /* CreateTeacherView.swift */; };
 		754F08742B9A2C2C00CA1AB4 /* TeacherSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F084C2B9A2C2C00CA1AB4 /* TeacherSelectionView.swift */; };
@@ -55,7 +54,7 @@
 		754F08862B9A2C2C00CA1AB4 /* StudentsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08642B9A2C2C00CA1AB4 /* StudentsSearchView.swift */; };
 		754F08872B9A2C2C00CA1AB4 /* StudentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08652B9A2C2C00CA1AB4 /* StudentsView.swift */; };
 		754F08882B9A2C2C00CA1AB4 /* CourseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08672B9A2C2C00CA1AB4 /* CourseCardView.swift */; };
-		754F08892B9A2C2C00CA1AB4 /* TableKindPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08682B9A2C2C00CA1AB4 /* TableKindPickerView.swift */; };
+		754F08892B9A2C2C00CA1AB4 /* TimetableKindPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08682B9A2C2C00CA1AB4 /* TimetableKindPickerView.swift */; };
 		754F088A2B9A2C2C00CA1AB4 /* TimetableBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08692B9A2C2C00CA1AB4 /* TimetableBodyView.swift */; };
 		754F088B2B9A2C2C00CA1AB4 /* TimetableCoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F086A2B9A2C2C00CA1AB4 /* TimetableCoursesView.swift */; };
 		754F088C2B9A2C2C00CA1AB4 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F086B2B9A2C2C00CA1AB4 /* TimetableView.swift */; };
@@ -66,12 +65,20 @@
 		754F089A2B9A2C6800CA1AB4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08922B9A2C6800CA1AB4 /* Models.swift */; };
 		754F089C2B9A2C6800CA1AB4 /* PreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F08942B9A2C6800CA1AB4 /* PreviewHelper.swift */; };
 		754F089F2B9A2D6800CA1AB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F089E2B9A2D6800CA1AB4 /* ContentView.swift */; };
+		757A59182B9C92AA00B1C6E9 /* ReRegistrationCourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A59172B9C92AA00B1C6E9 /* ReRegistrationCourseInfoView.swift */; };
+		757A591A2B9C964F00B1C6E9 /* StudentsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A59192B9C964F00B1C6E9 /* StudentsVM.swift */; };
+		75C04B362B9B51FF003D499A /* CourseSelectionDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C04B352B9B51FF003D499A /* CourseSelectionDaysView.swift */; };
+		75C04B392B9C80B8003D499A /* ReRegistrationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C04B382B9C80B8003D499A /* ReRegistrationTableView.swift */; };
 		75CBE5262B9A3292006A6E8A /* AttendanceCourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE5252B9A3292006A6E8A /* AttendanceCourseInfoView.swift */; };
 		75CBE5282B9A32BB006A6E8A /* AttendanceStudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE5272B9A32BB006A6E8A /* AttendanceStudentListView.swift */; };
 		75CBE52A2B9A37AE006A6E8A /* CourseSelectionsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE5292B9A37AE006A6E8A /* CourseSelectionsVM.swift */; };
 		75CBE52D2B9A38F8006A6E8A /* CourseSelectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE52C2B9A38F8006A6E8A /* CourseSelectionsView.swift */; };
 		75CBE5302B9A3A58006A6E8A /* CourseCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE52F2B9A3A58006A6E8A /* CourseCheckboxView.swift */; };
 		75CBE5322B9A7497006A6E8A /* StudentPaymentsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE5312B9A7497006A6E8A /* StudentPaymentsRowView.swift */; };
+		75D59CE02B9B45670021324B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D59CDF2B9B45670021324B /* ListView.swift */; };
+		75D59CE22B9B47FE0021324B /* ListTablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D59CE12B9B47FE0021324B /* ListTablesView.swift */; };
+		75D59CE62B9B4C390021324B /* ListKindPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D59CE52B9B4C390021324B /* ListKindPickerView.swift */; };
+		75D59CE82B9B4CFE0021324B /* ListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D59CE72B9B4CFE0021324B /* ListVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +127,6 @@
 		754F08312B9A2C2000CA1AB4 /* TextFieldV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldV.swift; sourceTree = "<group>"; };
 		754F08332B9A2C2000CA1AB4 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		754F08472B9A2C2C00CA1AB4 /* AttendanceTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceTableView.swift; sourceTree = "<group>"; };
-		754F08482B9A2C2C00CA1AB4 /* AttendanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceView.swift; sourceTree = "<group>"; };
 		754F08492B9A2C2C00CA1AB4 /* LessonColumnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonColumnView.swift; sourceTree = "<group>"; };
 		754F084B2B9A2C2C00CA1AB4 /* CreateTeacherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTeacherView.swift; sourceTree = "<group>"; };
 		754F084C2B9A2C2C00CA1AB4 /* TeacherSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSelectionView.swift; sourceTree = "<group>"; };
@@ -144,7 +150,7 @@
 		754F08642B9A2C2C00CA1AB4 /* StudentsSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsSearchView.swift; sourceTree = "<group>"; };
 		754F08652B9A2C2C00CA1AB4 /* StudentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsView.swift; sourceTree = "<group>"; };
 		754F08672B9A2C2C00CA1AB4 /* CourseCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCardView.swift; sourceTree = "<group>"; };
-		754F08682B9A2C2C00CA1AB4 /* TableKindPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableKindPickerView.swift; sourceTree = "<group>"; };
+		754F08682B9A2C2C00CA1AB4 /* TimetableKindPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableKindPickerView.swift; sourceTree = "<group>"; };
 		754F08692B9A2C2C00CA1AB4 /* TimetableBodyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableBodyView.swift; sourceTree = "<group>"; };
 		754F086A2B9A2C2C00CA1AB4 /* TimetableCoursesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableCoursesView.swift; sourceTree = "<group>"; };
 		754F086B2B9A2C2C00CA1AB4 /* TimetableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
@@ -155,12 +161,20 @@
 		754F08922B9A2C6800CA1AB4 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		754F08942B9A2C6800CA1AB4 /* PreviewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewHelper.swift; sourceTree = "<group>"; };
 		754F089E2B9A2D6800CA1AB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		757A59172B9C92AA00B1C6E9 /* ReRegistrationCourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReRegistrationCourseInfoView.swift; sourceTree = "<group>"; };
+		757A59192B9C964F00B1C6E9 /* StudentsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsVM.swift; sourceTree = "<group>"; };
+		75C04B352B9B51FF003D499A /* CourseSelectionDaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSelectionDaysView.swift; sourceTree = "<group>"; };
+		75C04B382B9C80B8003D499A /* ReRegistrationTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReRegistrationTableView.swift; sourceTree = "<group>"; };
 		75CBE5252B9A3292006A6E8A /* AttendanceCourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceCourseInfoView.swift; sourceTree = "<group>"; };
 		75CBE5272B9A32BB006A6E8A /* AttendanceStudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceStudentListView.swift; sourceTree = "<group>"; };
 		75CBE5292B9A37AE006A6E8A /* CourseSelectionsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSelectionsVM.swift; sourceTree = "<group>"; };
 		75CBE52C2B9A38F8006A6E8A /* CourseSelectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSelectionsView.swift; sourceTree = "<group>"; };
 		75CBE52F2B9A3A58006A6E8A /* CourseCheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCheckboxView.swift; sourceTree = "<group>"; };
 		75CBE5312B9A7497006A6E8A /* StudentPaymentsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentPaymentsRowView.swift; sourceTree = "<group>"; };
+		75D59CDF2B9B45670021324B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		75D59CE12B9B47FE0021324B /* ListTablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTablesView.swift; sourceTree = "<group>"; };
+		75D59CE52B9B4C390021324B /* ListKindPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKindPickerView.swift; sourceTree = "<group>"; };
+		75D59CE72B9B4CFE0021324B /* ListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,7 +293,7 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
-		754F08322B9A2C2000CA1AB4 /* Views */ = {
+		754F08322B9A2C2000CA1AB4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				754F082B2B9A2C2000CA1AB4 /* CheckBox.swift */,
@@ -290,7 +304,7 @@
 				754F08302B9A2C2000CA1AB4 /* SearchField.swift */,
 				754F08312B9A2C2000CA1AB4 /* TextFieldV.swift */,
 			);
-			path = Views;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		754F08342B9A2C2000CA1AB4 /* Design */ = {
@@ -300,19 +314,20 @@
 				754F08212B9A2C2000CA1AB4 /* Color */,
 				754F08272B9A2C2000CA1AB4 /* Modifier */,
 				754F082A2B9A2C2000CA1AB4 /* Styles */,
-				754F08322B9A2C2000CA1AB4 /* Views */,
+				754F08322B9A2C2000CA1AB4 /* Components */,
 			);
 			path = Design;
 			sourceTree = "<group>";
 		};
-		754F084A2B9A2C2C00CA1AB4 /* Attendance */ = {
+		754F084A2B9A2C2C00CA1AB4 /* attendance */ = {
 			isa = PBXGroup;
 			children = (
-				754F08482B9A2C2C00CA1AB4 /* AttendanceView.swift */,
-				75CBE52E2B9A3A47006A6E8A /* selection */,
-				75CBE52B2B9A38A0006A6E8A /* table */,
+				754F08472B9A2C2C00CA1AB4 /* AttendanceTableView.swift */,
+				75CBE5252B9A3292006A6E8A /* AttendanceCourseInfoView.swift */,
+				75CBE5272B9A32BB006A6E8A /* AttendanceStudentListView.swift */,
+				754F08492B9A2C2C00CA1AB4 /* LessonColumnView.swift */,
 			);
-			path = Attendance;
+			path = attendance;
 			sourceTree = "<group>";
 		};
 		754F084D2B9A2C2C00CA1AB4 /* teacher */ = {
@@ -377,6 +392,7 @@
 		754F08662B9A2C2C00CA1AB4 /* Students */ = {
 			isa = PBXGroup;
 			children = (
+				757A59192B9C964F00B1C6E9 /* StudentsVM.swift */,
 				754F08652B9A2C2C00CA1AB4 /* StudentsView.swift */,
 				754F08642B9A2C2C00CA1AB4 /* StudentsSearchView.swift */,
 				754F08612B9A2C2C00CA1AB4 /* StudentCoursesView.swift */,
@@ -393,7 +409,7 @@
 				754F086C2B9A2C2C00CA1AB4 /* TimetableVM.swift */,
 				754F086B2B9A2C2C00CA1AB4 /* TimetableView.swift */,
 				754F086A2B9A2C2C00CA1AB4 /* TimetableCoursesView.swift */,
-				754F08682B9A2C2C00CA1AB4 /* TableKindPickerView.swift */,
+				754F08682B9A2C2C00CA1AB4 /* TimetableKindPickerView.swift */,
 				754F08692B9A2C2C00CA1AB4 /* TimetableBodyView.swift */,
 				754F08672B9A2C2C00CA1AB4 /* CourseCardView.swift */,
 			);
@@ -410,7 +426,7 @@
 				754F08662B9A2C2C00CA1AB4 /* Students */,
 				754F086E2B9A2C2C00CA1AB4 /* Timetable */,
 				754F08532B9A2C2C00CA1AB4 /* Finance */,
-				754F084A2B9A2C2C00CA1AB4 /* Attendance */,
+				75D59CDE2B9B44EB0021324B /* Lists */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -426,15 +442,13 @@
 			path = "Swift Data";
 			sourceTree = "<group>";
 		};
-		75CBE52B2B9A38A0006A6E8A /* table */ = {
+		75C04B372B9C8029003D499A /* re registration */ = {
 			isa = PBXGroup;
 			children = (
-				754F08472B9A2C2C00CA1AB4 /* AttendanceTableView.swift */,
-				75CBE5252B9A3292006A6E8A /* AttendanceCourseInfoView.swift */,
-				75CBE5272B9A32BB006A6E8A /* AttendanceStudentListView.swift */,
-				754F08492B9A2C2C00CA1AB4 /* LessonColumnView.swift */,
+				75C04B382B9C80B8003D499A /* ReRegistrationTableView.swift */,
+				757A59172B9C92AA00B1C6E9 /* ReRegistrationCourseInfoView.swift */,
 			);
-			path = table;
+			path = "re registration";
 			sourceTree = "<group>";
 		};
 		75CBE52E2B9A3A47006A6E8A /* selection */ = {
@@ -442,9 +456,24 @@
 			children = (
 				75CBE5292B9A37AE006A6E8A /* CourseSelectionsVM.swift */,
 				75CBE52C2B9A38F8006A6E8A /* CourseSelectionsView.swift */,
+				75C04B352B9B51FF003D499A /* CourseSelectionDaysView.swift */,
 				75CBE52F2B9A3A58006A6E8A /* CourseCheckboxView.swift */,
 			);
 			path = selection;
+			sourceTree = "<group>";
+		};
+		75D59CDE2B9B44EB0021324B /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				75D59CE72B9B4CFE0021324B /* ListVM.swift */,
+				75D59CDF2B9B45670021324B /* ListView.swift */,
+				75D59CE12B9B47FE0021324B /* ListTablesView.swift */,
+				75D59CE52B9B4C390021324B /* ListKindPickerView.swift */,
+				75CBE52E2B9A3A47006A6E8A /* selection */,
+				754F084A2B9A2C2C00CA1AB4 /* attendance */,
+				75C04B372B9C8029003D499A /* re registration */,
+			);
+			path = Lists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -584,7 +613,6 @@
 				754F089C2B9A2C6800CA1AB4 /* PreviewHelper.swift in Sources */,
 				754F07F42B9A2BB000CA1AB4 /* Yoga_AdminApp.swift in Sources */,
 				754F087E2B9A2C2C00CA1AB4 /* PaymentView.swift in Sources */,
-				754F08712B9A2C2C00CA1AB4 /* AttendanceView.swift in Sources */,
 				75CBE52D2B9A38F8006A6E8A /* CourseSelectionsView.swift in Sources */,
 				754F089F2B9A2D6800CA1AB4 /* ContentView.swift in Sources */,
 				754F08722B9A2C2C00CA1AB4 /* LessonColumnView.swift in Sources */,
@@ -594,11 +622,13 @@
 				754F08992B9A2C6800CA1AB4 /* ModelExtensions.swift in Sources */,
 				754F08422B9A2C2100CA1AB4 /* EmptyView.swift in Sources */,
 				75CBE5322B9A7497006A6E8A /* StudentPaymentsRowView.swift in Sources */,
+				75D59CE22B9B47FE0021324B /* ListTablesView.swift in Sources */,
 				754F08882B9A2C2C00CA1AB4 /* CourseCardView.swift in Sources */,
 				754F08452B9A2C2100CA1AB4 /* TextFieldV.swift in Sources */,
 				754F087F2B9A2C2C00CA1AB4 /* CourseSelectionView.swift in Sources */,
 				754F08752B9A2C2C00CA1AB4 /* CourseView.swift in Sources */,
 				754F08872B9A2C2C00CA1AB4 /* StudentsView.swift in Sources */,
+				757A591A2B9C964F00B1C6E9 /* StudentsVM.swift in Sources */,
 				754F087D2B9A2C2C00CA1AB4 /* PaymentRowView.swift in Sources */,
 				754F08812B9A2C2C00CA1AB4 /* RegistrationView.swift in Sources */,
 				754F08822B9A2C2C00CA1AB4 /* RegistrationVM.swift in Sources */,
@@ -614,17 +644,21 @@
 				754F08392B9A2C2100CA1AB4 /* ifModifier.swift in Sources */,
 				754F08412B9A2C2100CA1AB4 /* DotOption.swift in Sources */,
 				75CBE5262B9A3292006A6E8A /* AttendanceCourseInfoView.swift in Sources */,
+				75D59CE82B9B4CFE0021324B /* ListVM.swift in Sources */,
 				754F08702B9A2C2C00CA1AB4 /* AttendanceTableView.swift in Sources */,
+				75D59CE02B9B45670021324B /* ListView.swift in Sources */,
 				754F088D2B9A2C2C00CA1AB4 /* TimetableVM.swift in Sources */,
 				754F087B2B9A2C2C00CA1AB4 /* GroupView.swift in Sources */,
 				754F08362B9A2C2100CA1AB4 /* ColorOptionView.swift in Sources */,
 				754F08772B9A2C2C00CA1AB4 /* KindPickerView.swift in Sources */,
 				754F083B2B9A2C2100CA1AB4 /* ScreenModifier.swift in Sources */,
+				757A59182B9C92AA00B1C6E9 /* ReRegistrationCourseInfoView.swift in Sources */,
 				754F08972B9A2C6800CA1AB4 /* DebugView.swift in Sources */,
 				754F08852B9A2C2C00CA1AB4 /* StudentPersonalInformationView.swift in Sources */,
 				754F08802B9A2C2C00CA1AB4 /* PersonalInformationView.swift in Sources */,
 				754F083C2B9A2C2100CA1AB4 /* SectionModifier.swift in Sources */,
-				754F08892B9A2C2C00CA1AB4 /* TableKindPickerView.swift in Sources */,
+				75C04B362B9B51FF003D499A /* CourseSelectionDaysView.swift in Sources */,
+				754F08892B9A2C2C00CA1AB4 /* TimetableKindPickerView.swift in Sources */,
 				754F08842B9A2C2C00CA1AB4 /* StudentPaymentsView.swift in Sources */,
 				754F089A2B9A2C6800CA1AB4 /* Models.swift in Sources */,
 				754F083E2B9A2C2100CA1AB4 /* TextFieldStyle.swift in Sources */,
@@ -633,6 +667,8 @@
 				754F087A2B9A2C2C00CA1AB4 /* GroupSelectionView.swift in Sources */,
 				754F08792B9A2C2C00CA1AB4 /* CreateGroupFormView.swift in Sources */,
 				754F083F2B9A2C2100CA1AB4 /* CheckBox.swift in Sources */,
+				75C04B392B9C80B8003D499A /* ReRegistrationTableView.swift in Sources */,
+				75D59CE62B9B4C390021324B /* ListKindPickerView.swift in Sources */,
 				754F088B2B9A2C2C00CA1AB4 /* TimetableCoursesView.swift in Sources */,
 				754F08732B9A2C2C00CA1AB4 /* CreateTeacherView.swift in Sources */,
 				754F08762B9A2C2C00CA1AB4 /* CourseVM.swift in Sources */,

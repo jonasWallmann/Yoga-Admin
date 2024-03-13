@@ -15,7 +15,7 @@ struct PricePickerView: View {
             Text("Price")
                 .font(.headline)
             Spacer()
-            TextField("", value: $price, format: .currency(code: "USD"))
+            TextField("", value: $price, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
                 .frame(width: 125)
                 .textFieldStyle(.roundedBorder)
         }

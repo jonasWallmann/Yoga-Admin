@@ -24,9 +24,9 @@ struct CourseView: View {
 
                     VStack(alignment: .leading, spacing: 24) {
                         TextFieldV("name...", text: $vm.name, showingValidation: vm.showingValidation)
-                            .frame(maxWidth: 400)
                         ColorSelectionView(selectedColor: $vm.color)
                     }
+                    .frame(maxWidth: 420)
                     .section()
 
                     HStack(spacing: 50) {
