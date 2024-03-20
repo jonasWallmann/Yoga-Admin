@@ -41,13 +41,17 @@ struct Secondary: ButtonStyle {
 struct Tertiary: ButtonStyle {
     @Environment(\.isEnabled) private var isEnabled: Bool
 
+    @State private var hovered: Bool = false
+
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .padding(.vertical, VERTICAL_PADDING)
-            .underline()
             .foregroundStyle(isEnabled ? .accent : .disabled)
             .opacity(configuration.isPressed ? 0.5 : 1)
             .fontWeight(.medium)
+//            .onHover { hovering in
+//                hovered = hovering
+//            }
+//            .underline(hovered, pattern: .solid, color: .accentColor)
     }
 }
 

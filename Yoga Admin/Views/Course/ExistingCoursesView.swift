@@ -8,8 +8,6 @@
 import SwiftData
 import SwiftUI
 
-private let ARROW_SPACE: CGFloat = 52
-
 struct ExistingCoursesView: View {
     @Environment(AppVM.self) private var appVM
 
@@ -31,7 +29,6 @@ struct ExistingCoursesView: View {
                         Text(lastGroup.name)
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    arrowSpace
                     Text(appVM.group?.name ?? "no group")
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
@@ -49,23 +46,19 @@ struct ExistingCoursesView: View {
                             ForEach(pairs) { pair in
                                 HStack(spacing: 8) {
                                     if let previousCourse = pair.previous {
-                                        courseDescription(course: previousCourse)
-                                            .frame(maxWidth: .infinity, alignment: .leading)
-
                                         if pair.current == nil {
                                             Button {
                                                 vm.useTemplate(course: previousCourse)
                                             } label: {
-                                                Image(systemName: "arrow.right.circle")
-                                                    .foregroundStyle(previousCourse.color.value)
+                                                Text("\(previousCourse.name) \(previousCourse.time)")
+                                                    .frame(maxWidth: .infinity, alignment: .leading)
                                             }
-                                            .buttonStyle(.plain)
-                                            .frame(width: ARROW_SPACE)
+                                            .buttonStyle(Tertiary())
                                         } else {
-                                            arrowSpace
+                                            courseDescription(course: previousCourse)
+                                                .frame(maxWidth: .infinity, alignment: .leading)
                                         }
                                     } else {
-                                        arrowSpace
                                         space
                                     }
 
@@ -131,11 +124,6 @@ struct ExistingCoursesView: View {
     private var space: some View {
         Spacer()
             .frame(maxWidth: .infinity)
-    }
-
-    private var arrowSpace: some View {
-        Spacer()
-            .frame(width: ARROW_SPACE)
     }
 }
 

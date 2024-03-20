@@ -63,9 +63,9 @@ struct CreateGroupFormView: View {
         }
         .frame(maxWidth: 285)
         .onAppear {
-            guard let lastGroup = groups.last else { return }
+            guard let highest = groups.max(by: { $0.name < $1.name}) else { return }
 
-            number = lastGroup.number + 1
+            number = highest.number + 1
         }
     }
 

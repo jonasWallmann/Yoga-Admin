@@ -85,17 +85,25 @@ class CourseVM {
     }
 
     public func useTemplate(course: Course) {
-        name = course.name
-        color = course.color
+        let isEmpty = name.isEmpty
 
-        startDate = course.end.addingTimeInterval(3600 * 24 * 7)
-        endDate = course.end.addingTimeInterval(3600 * 24 * 7 * Double(course.lessonCount))
+        if isEmpty == false {
+            resetInputs()
+        }
 
-        startTime = course.start
-        endTime = course.end
+        DispatchQueue.main.asyncAfter(deadline: .now() + (isEmpty ? 0 : 0.3)) {
+            self.name = course.name
+            self.color = course.color
 
-        price = course.price
-        kind = course.kind
-        teacher = course.teacher
+            self.startDate = course.end.addingTimeInterval(3600 * 24 * 7)
+            self.endDate = course.end.addingTimeInterval(3600 * 24 * 7 * Double(course.lessonCount))
+
+            self.startTime = course.start
+            self.endTime = course.end
+
+            self.price = course.price
+            self.kind = course.kind
+            self.teacher = course.teacher
+        }
     }
 }
