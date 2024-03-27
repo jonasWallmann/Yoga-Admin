@@ -31,52 +31,46 @@ struct ExistingCoursesView: View {
                 Text(appVM.group?.name ?? "no group")
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .font(.title3)
+            .font(.title2)
+            .fontWeight(.semibold)
             .foregroundStyle(.darkest)
 
             ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
+                VStack(alignment: .leading, spacing: 44) {
                     ForEach(0 ..< 7) { dayIndex in
                         let pairs: [CoursePair] = getCoursePairs(on: dayIndex)
 
                         if pairs.isEmpty == false {
-                            VStack(alignment: .leading, spacing: 12) {
+                            VStack(alignment: .leading, spacing: 8) {
                                 Text(Calendar.dayNames[dayIndex].uppercased())
                                     .tagLine()
 
-                                ForEach(pairs) { pair in
-                                    HStack(spacing: 8) {
-                                        if let previousCourse = pair.previous {
-                                            if pair.current == nil {
-                                                Button {
-                                                    vm.useTemplate(course: previousCourse)
-                                                } label: {
-                                                    Text("\(previousCourse.name) \(previousCourse.time)")
+                                VStack(alignment: .leading, spacing: 12) {
+                                    ForEach(pairs) { pair in
+                                        HStack(spacing: 8) {
+                                            if let previousCourse = pair.previous {
+                                                if pair.current == nil {
+                                                    Button {
+                                                        vm.useTemplate(course: previousCourse)
+                                                    } label: {
+                                                        Text("\(previousCourse.name) \(previousCourse.time)")
+                                                            .frame(maxWidth: .infinity, alignment: .leading)
+                                                    }
+                                                    .buttonStyle(Tertiary())
+                                                } else {
+                                                    courseDescription(course: previousCourse)
                                                         .frame(maxWidth: .infinity, alignment: .leading)
                                                 }
-                                                .buttonStyle(Tertiary())
                                             } else {
-                                                Group {
-                                                    if previousCourse.name == pair.current?.name && previousCourse.time == pair.current?.time {
-//                                                        Text("continues")
-                                                        Image(systemName: "arrow.circlepath")
-                                                            .foregroundStyle(.dark)
-//                                                            .font(.caption)
-                                                    } else {
-                                                        courseDescription(course: previousCourse)
-                                                    }
-                                                }
-                                                .frame(maxWidth: .infinity, alignment: .leading)
+                                                space
                                             }
-                                        } else {
-                                            space
-                                        }
-
-                                        if let currentCourse = pair.current {
-                                            courseDescription(course: currentCourse)
-                                                .frame(maxWidth: .infinity, alignment: .leading)
-                                        } else {
-                                            space
+                                            
+                                            if let currentCourse = pair.current {
+                                                courseDescription(course: currentCourse)
+                                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                            } else {
+                                                space
+                                            }
                                         }
                                     }
                                 }

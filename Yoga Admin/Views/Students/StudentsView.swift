@@ -25,6 +25,7 @@ struct StudentsView: View {
                     VStack(alignment: .leading, spacing: 20) {
                         Text(student.name)
                             .font(.largeTitle)
+                            .fontWeight(.semibold)
                             .foregroundStyle(.darkest)
 
                         HStack(alignment: .top, spacing: 32) {

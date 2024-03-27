@@ -10,8 +10,9 @@ import SwiftUI
 struct TagLineModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .foregroundStyle(Color.darkest)
-            .font(.caption.bold())
+            .foregroundStyle(.darkest)
+            .font(.caption)
+            .fontWeight(.bold)
             .tracking(0.8)
     }
 }

@@ -22,8 +22,9 @@ struct CourseView: View {
                     .frame(maxWidth: 370)
 
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("New course for \(group.name)")
+                    Text("Form for \(group.name)")
                         .font(.title)
+                        .fontWeight(.semibold)
                         .foregroundStyle(.darkest)
                     NewCourseFormView(vm: vm)
                 }

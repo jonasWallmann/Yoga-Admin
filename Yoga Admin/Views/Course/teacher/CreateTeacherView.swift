@@ -35,7 +35,7 @@ struct CreateTeacherView: View {
             Button("cancel") {
                 dismiss()
             }
-            .foregroundStyle(Color.accent)
+            .buttonStyle(Tertiary())
 
             Text("New teacher")
                 .font(.title)

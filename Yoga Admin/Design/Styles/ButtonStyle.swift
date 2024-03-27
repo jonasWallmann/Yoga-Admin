@@ -47,7 +47,6 @@ struct Tertiary: ButtonStyle {
         configuration.label
             .foregroundStyle(isEnabled ? .accent : .disabled)
             .opacity(configuration.isPressed ? 0.5 : 1)
-            .fontWeight(.medium)
 //            .onHover { hovering in
 //                hovered = hovering
 //            }

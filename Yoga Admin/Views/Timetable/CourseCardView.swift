@@ -17,11 +17,12 @@ struct CourseCardView: View {
     var teacherTag: Bool = false
 
     private var registrations: [Registration]? {
-        course?.registrations?.sorted(by: { left, right in
+        let sorted = course?.registrations?.sorted(by: { left, right in
             guard let leftName = left.student?.name, let rightName = right.student?.name else { return true }
 
             return leftName < rightName
         })
+        return (sorted?.isEmpty ?? true) ? nil : sorted
     }
 
     var body: some View {

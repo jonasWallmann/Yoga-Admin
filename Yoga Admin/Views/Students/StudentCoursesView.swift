@@ -17,14 +17,15 @@ struct StudentCoursesView: View {
             VStack(spacing: 32) {
                 ForEach(registrations) { registration in
                     if let course = registration.course {
-                        VStack(alignment: .leading, spacing: 8) {
+                        VStack(alignment: .leading, spacing: 6) {
                             Text(groupLabel(for: course).uppercased())
                                 .font(.caption.bold())
                                 .foregroundStyle(Color.dark)
                                 .tracking(1.06)
+                                .padding(.leading, 6)
 
                             CourseCardView(course: course, kind: .information, includeDay: true, teacherTag: true)
-                                .frame(width: 132)
+                                .frame(width: 140)
                         }
                     }
                 }
