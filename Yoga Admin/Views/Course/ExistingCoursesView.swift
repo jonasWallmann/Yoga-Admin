@@ -22,51 +22,62 @@ struct ExistingCoursesView: View {
     }
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 32) {
-                HStack(spacing: 8) {
-                    if let lastGroup = previousGroup {
-                        Text(lastGroup.name)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                    }
-                    Text(appVM.group?.name ?? "no group")
+        VStack(alignment: .leading, spacing: 24) {
+            HStack(spacing: 8) {
+                if let lastGroup = previousGroup {
+                    Text(lastGroup.name)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
-                .font(.title3)
-                .foregroundStyle(.darkest)
+                Text(appVM.group?.name ?? "no group")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .font(.title3)
+            .foregroundStyle(.darkest)
 
-                ForEach(0 ..< 7) { dayIndex in
-                    let pairs: [CoursePair] = getCoursePairs(on: dayIndex)
+            ScrollView {
+                VStack(alignment: .leading, spacing: 24) {
+                    ForEach(0 ..< 7) { dayIndex in
+                        let pairs: [CoursePair] = getCoursePairs(on: dayIndex)
 
-                    if pairs.isEmpty == false {
-                        VStack(alignment: .leading, spacing: 12) {
-                            Text(Calendar.dayNames[dayIndex].uppercased())
-                                .tagLine()
+                        if pairs.isEmpty == false {
+                            VStack(alignment: .leading, spacing: 12) {
+                                Text(Calendar.dayNames[dayIndex].uppercased())
+                                    .tagLine()
 
-                            ForEach(pairs) { pair in
-                                HStack(spacing: 8) {
-                                    if let previousCourse = pair.previous {
-                                        if pair.current == nil {
-                                            Button {
-                                                vm.useTemplate(course: previousCourse)
-                                            } label: {
-                                                Text("\(previousCourse.name) \(previousCourse.time)")
-                                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                            }
-                                            .buttonStyle(Tertiary())
-                                        } else {
-                                            courseDescription(course: previousCourse)
+                                ForEach(pairs) { pair in
+                                    HStack(spacing: 8) {
+                                        if let previousCourse = pair.previous {
+                                            if pair.current == nil {
+                                                Button {
+                                                    vm.useTemplate(course: previousCourse)
+                                                } label: {
+                                                    Text("\(previousCourse.name) \(previousCourse.time)")
+                                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                                }
+                                                .buttonStyle(Tertiary())
+                                            } else {
+                                                Group {
+                                                    if previousCourse.name == pair.current?.name && previousCourse.time == pair.current?.time {
+//                                                        Text("continues")
+                                                        Image(systemName: "arrow.circlepath")
+                                                            .foregroundStyle(.dark)
+//                                                            .font(.caption)
+                                                    } else {
+                                                        courseDescription(course: previousCourse)
+                                                    }
+                                                }
                                                 .frame(maxWidth: .infinity, alignment: .leading)
+                                            }
+                                        } else {
+                                            space
                                         }
-                                    } else {
-                                        space
-                                    }
 
-                                    if let currentCourse = pair.current {
-                                        courseDescription(course: currentCourse)
-                                            .frame(maxWidth: .infinity, alignment: .leading)
-                                    } else {
-                                        space
+                                        if let currentCourse = pair.current {
+                                            courseDescription(course: currentCourse)
+                                                .frame(maxWidth: .infinity, alignment: .leading)
+                                        } else {
+                                            space
+                                        }
                                     }
                                 }
                             }
@@ -74,8 +85,8 @@ struct ExistingCoursesView: View {
                     }
                 }
             }
-            .padding(.top, 24)
         }
+        .padding(.top, 20)
     }
 
     private func getCoursePairs(on dayIndex: Int) -> [CoursePair] {
@@ -122,8 +133,9 @@ struct ExistingCoursesView: View {
     }
 
     private var space: some View {
-        Spacer()
-            .frame(maxWidth: .infinity)
+        Text("-")
+            .foregroundStyle(.dark)
+            .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 

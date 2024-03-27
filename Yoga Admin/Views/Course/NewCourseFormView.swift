@@ -12,6 +12,8 @@ struct NewCourseFormView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(AppVM.self) private var appVM
 
+    @Query private var courses: [Course]
+
     @Bindable public var vm: CourseVM
 
     var body: some View {
@@ -24,6 +26,9 @@ struct NewCourseFormView: View {
 
                     VStack(alignment: .leading, spacing: 24) {
                         TextFieldV("name...", text: $vm.name, showingValidation: vm.showingValidation)
+                            .onChange(of: vm.name) { _, newName in
+                                vm.autoSelectColor(for: newName, courses: courses)
+                            }
                         ColorSelectionView(selectedColor: $vm.color)
                     }
                     .frame(maxWidth: 420)
@@ -69,4 +74,5 @@ struct NewCourseFormView: View {
     return NewCourseFormView(vm: CourseVM())
         .modelContainer(container)
         .environment(appVM)
+        .padding()
 }

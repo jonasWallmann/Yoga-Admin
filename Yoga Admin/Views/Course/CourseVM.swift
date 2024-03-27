@@ -106,4 +106,22 @@ class CourseVM {
             self.teacher = course.teacher
         }
     }
+
+    public func autoSelectColor(for name: String, courses: [Course]) {
+        if name.isEmpty {
+            color = nil
+            return
+        }
+        
+        if let matchingCourse = courses.first(where: { $0.name.prefix(name.count) == name }) {
+            color = matchingCourse.color
+        } else {
+            for colorOption in ColorEnum.allCases {
+                if courses.contains(where: { $0.color == colorOption }) == false {
+                    color = colorOption
+                    return
+                }
+            }
+        }
+    }
 }

@@ -14,36 +14,31 @@ struct ColorOptionView: View {
 
     @Binding var selectedColor: ColorEnum?
 
-    let isPale: Bool
+    var isPale: Bool = false
 
     private var previewColor: Color {
         isPale ? Color.paleFor(color: color, scheme: colorScheme) : color.value
     }
 
     var body: some View {
-        Button {
-            selectedColor = color
-        } label: {
-                ZStack {
-                    if color == selectedColor {
-                        Circle()
-                            .frame(width: 24)
+        ZStack {
+            if color == selectedColor {
+                Circle()
+                    .frame(width: 20)
 
-                        Circle()
-                            .stroke(lineWidth: 3)
-                            .frame(width: 32)
+                Circle()
+                    .stroke(lineWidth: 3)
+                    .frame(width: 28)
 
 //                        Circle()
 //                            .frame(width: 8)
 //                            .offset(y: 26)
-                    } else {
-                        Circle()
-                            .frame(width: 32)
-                    }
-                }
-                .foregroundStyle(previewColor)
+            } else {
+                Circle()
+                    .frame(width: 28)
+            }
         }
-        .buttonStyle(.plain)
+        .foregroundStyle(previewColor)
     }
 }
 

@@ -44,7 +44,7 @@ struct RegistrationView: View {
     }
 }
 
-#Preview("Registration") {
+#Preview("Registration", traits: traits) {
     let (container, appVM) = PreviewHelper.content
 
     return RegistrationView()
