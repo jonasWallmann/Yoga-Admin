@@ -14,7 +14,9 @@ struct ListTablesView: View {
 
     var maxRegistrationsPerCourse: Int {
         let sorted = appVM.courses.sorted(by: { $0.registrationCount > $1.registrationCount })
-        return sorted.first?.registrationCount ?? 10
+        let max = sorted.first?.registrationCount ?? 0
+
+        return max == 0 ? 10 : max
     }
 
     var body: some View {

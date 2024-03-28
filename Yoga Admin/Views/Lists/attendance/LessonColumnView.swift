@@ -43,6 +43,7 @@ struct LessonColumnView: View {
                 }
             }
         }
+        .frame(width: AttendanceSpacing.LESSON_COLUMN_WIDTH)
     }
 }
 

@@ -18,9 +18,7 @@ struct CourseSelectionDaysView: View {
                 if courses.isEmpty == false {
                     VStack(alignment: .leading, spacing: 12) {
                         Text(Calendar.dayNames[dayIndex].uppercased())
-                            .foregroundStyle(Color.darkest)
-                            .font(.caption.bold())
-                            .tracking(0.8)
+                            .tagLine()
 
                         ForEach(courses) { course in
                             CourseCheckboxView(course: course)

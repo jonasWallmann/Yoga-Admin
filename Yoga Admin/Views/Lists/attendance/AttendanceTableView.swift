@@ -18,7 +18,7 @@ struct AttendanceTableView: View {
     let course: Course
 
     private var width: CGFloat {
-        AttendanceSpacing.NAME_COLUMN_WIDTH + AttendanceSpacing.LESSON_COLUMN_WIDTH * CGFloat(course.lessonCount)
+        AttendanceSpacing.NAME_COLUMN_WIDTH + AttendanceSpacing.LESSON_COLUMN_WIDTH * CGFloat(course.lessonCount) + 11
     }
 
     private var height: CGFloat {
