@@ -15,18 +15,26 @@ struct CourseSelectionView: View {
 
     var group: CourseGroup?
 
+    let showingValidationError: Bool
+
     private var courses: [Course] {
         group?.courses ?? []
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
+        VStack(alignment: .leading, spacing: 16) {
             Group {
                 Text("Course")
                     .font(.headline)
                     .foregroundStyle(Color.darkest)
+
+                if showingValidationError && selection == nil {
+                     ErrorLabel("Please select a course")
+                }
+
                 Divider()
                     .padding(.trailing, 24)
+                    .padding(.bottom, 4)
             }
             .padding(.leading, LEADING_PADDING)
 
@@ -72,7 +80,7 @@ struct CourseSelectionView: View {
 
     @State var selection: Course? = data.course
 
-    return CourseSelectionView(selection: $selection, group: data.group)
+    return CourseSelectionView(selection: $selection, group: data.group, showingValidationError: false)
         .padding(.top, 24)
         .background(.snow)
 }

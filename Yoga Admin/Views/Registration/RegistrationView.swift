@@ -25,21 +25,21 @@ struct RegistrationView: View {
                 Text("Save")
                     .padding(.horizontal, 20)
             }
-            .disabled(!vm.validInputs)
             .buttonStyle(Primary())
             .frame(maxWidth: .infinity, alignment: .trailing)
 
-            HStack(alignment: .top, spacing: 40) {
+            HStack(alignment: .top, spacing: 32) {
                 PersonalInformationView(vm: vm)
                     .card()
 
-                CourseSelectionView(selection: $vm.course, group: appVM.group)
+                CourseSelectionView(selection: $vm.course, group: appVM.group, showingValidationError: vm.showingValidationError)
                     .padding(.top, 20)
                     .card(hasPadding: false)
             }
         }
         .frame(maxWidth: 740)
-        .padding(.bottom, 22)
+        .padding(.bottom, 32)
+        .padding(.leading, 8)
         .screen()
     }
 }

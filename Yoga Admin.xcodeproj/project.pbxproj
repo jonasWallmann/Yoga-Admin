@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		753A54392BB5B03100EC5516 /* ErrorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A54382BB5B03100EC5516 /* ErrorLabel.swift */; };
 		754F07F42B9A2BB000CA1AB4 /* Yoga_AdminApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F07F32B9A2BB000CA1AB4 /* Yoga_AdminApp.swift */; };
 		754F07F82B9A2BB100CA1AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F07F72B9A2BB100CA1AB4 /* Assets.xcassets */; };
 		754F07FC2B9A2BB100CA1AB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F07FB2B9A2BB100CA1AB4 /* Preview Assets.xcassets */; };
@@ -102,6 +103,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		753A54382BB5B03100EC5516 /* ErrorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLabel.swift; sourceTree = "<group>"; };
 		754F07F02B9A2BB000CA1AB4 /* Yoga Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yoga Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		754F07F32B9A2BB000CA1AB4 /* Yoga_AdminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yoga_AdminApp.swift; sourceTree = "<group>"; };
 		754F07F72B9A2BB100CA1AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 				754F082F2B9A2C2000CA1AB4 /* PricePickerView.swift */,
 				754F08302B9A2C2000CA1AB4 /* SearchField.swift */,
 				754F08312B9A2C2000CA1AB4 /* TextFieldV.swift */,
+				753A54382BB5B03100EC5516 /* ErrorLabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -666,6 +669,7 @@
 				75961E282BA19BD100C8F516 /* CourseView.swift in Sources */,
 				757A59182B9C92AA00B1C6E9 /* ReRegistrationCourseInfoView.swift in Sources */,
 				754F08972B9A2C6800CA1AB4 /* DebugView.swift in Sources */,
+				753A54392BB5B03100EC5516 /* ErrorLabel.swift in Sources */,
 				754F08852B9A2C2C00CA1AB4 /* StudentPersonalInformationView.swift in Sources */,
 				754F08802B9A2C2C00CA1AB4 /* PersonalInformationView.swift in Sources */,
 				754F083C2B9A2C2100CA1AB4 /* SectionModifier.swift in Sources */,

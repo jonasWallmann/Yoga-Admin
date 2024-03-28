@@ -22,6 +22,8 @@ class RegistrationVM {
 
     public var course: Course?
 
+    private(set) var showingValidationError = false
+
     public var validInputs: Bool {
         !(firstName.isEmpty || lastName.isEmpty || email.isEmpty || course == nil)
     }
@@ -68,10 +70,17 @@ class RegistrationVM {
         }
     }
 
-
-    // MARK:  Save ----------------------------------------------------------------
+    // MARK: Save ----------------------------------------------------------------
 
     public func save(modelContext: ModelContext, students: [Student], registrations: [Registration]) {
+        if validInputs == false {
+            withAnimation {
+                showingValidationError = true
+            }
+            return
+        }
+        showingValidationError = false
+
         let student = getStudent(modelContext: modelContext, students: students)
 
         if !registrations.contains(where: { $0.student == student && $0.course == course }) {
@@ -90,7 +99,7 @@ class RegistrationVM {
     }
 
     private func createRegistration(student: Student, modelContext: ModelContext) {
-        guard 
+        guard
             let course = course,
             let contextStudent = modelContext.model(for: student.id) as? Student,
             let contextCourse = modelContext.model(for: course.id) as? Course

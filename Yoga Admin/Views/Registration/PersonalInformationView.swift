@@ -13,12 +13,33 @@ struct PersonalInformationView: View {
 
     @Bindable var vm: RegistrationVM
 
+    private var validationMessage: String? {
+        if vm.firstName.isEmpty {
+            return "first name"
+        }
+        if vm.lastName.isEmpty {
+            return "last name"
+        }
+        if vm.email.isEmpty || vm.email.contains("@") == false {
+            return "email"
+        }
+        return nil
+    }
+
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
+        VStack(alignment: .leading, spacing: 16) {
             Text("Information")
                 .font(.headline)
                 .foregroundStyle(Color.darkest)
+            
+            if vm.showingValidationError {
+                if let message = validationMessage {
+                    ErrorLabel("Please fill out the \(message)")
+                }
+            }
+
             Divider()
+                .padding(.bottom, 4)
 
             VStack(alignment: .leading, spacing: 24) {
                 TextField("First name...", text: $vm.firstName)
